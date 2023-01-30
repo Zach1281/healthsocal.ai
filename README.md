@@ -1,1 +1,0 @@
-# healthsocal.ai
