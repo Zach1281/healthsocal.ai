@@ -2,7 +2,7 @@
   <div id="app">
     <l-map :center="[37.0902, -95.7129]" :zoom="4" style="height: 500px;" :options="mapOptions">
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-      <l-choropleth-layer :data="pyDepartmentsData" titleKey="Geographic_Area" idKey="Geographic_Area" :value="value" :geojsonIdKey="name" :geojson="usGeojson" :colorScale="colorScale">
+      <l-choropleth-layer :data="pyDepartmentsData" titleKey="Postal_Code" idKey="Geographic_Area" :value="value" geojsonIdKey="name" :geojson="usGeojson" :colorScale="colorScale">
         <template slot-scope="props">
           <l-info-control :item="props.currentItem" :unit="props.unit" title="State" placeholder="Hover over a state"/>
           <l-reference-chart title="US State Populations" :colorScale="colorScale" :min="props.min" :max="props.max" position="topright"/>

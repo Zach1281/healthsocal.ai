@@ -1,30 +1,5 @@
 export var pyDepartmentsData = [
   {
-    Geographic_Area: "United States",
-    Postal_Code: "",
-    Total_Resident_Population: 328239523
-  },
-  {
-    Geographic_Area: "Northeast",
-    Postal_Code: "",
-    Total_Resident_Population: 55982803
-  },
-  {
-    Geographic_Area: "Midwest",
-    Postal_Code: "",
-    Total_Resident_Population: 68329004
-  },
-  {
-    Geographic_Area: "South",
-    Postal_Code: "",
-    Total_Resident_Population: 125580448
-  },
-  {
-    Geographic_Area: "West",
-    Postal_Code: "",
-    Total_Resident_Population: 78347268
-  },
-  {
     Geographic_Area: "Alabama",
     Postal_Code: "AL",
     Total_Resident_Population: 4903185
