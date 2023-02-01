@@ -44,9 +44,6 @@ export default {
         key: "amount_m",
         metric: "% boys"
       }],
-      /*mapOptions: {
-        attributionControl: false
-      },*/
       currentStrokeColor: '3d3213'
     }
   },

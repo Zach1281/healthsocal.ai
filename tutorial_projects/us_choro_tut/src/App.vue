@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <l-map :center="[-23.752961, -57.854357]" :zoom="6" style="height: 500px;" :options="mapOptions">
-      <l-choropleth-layer :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="paraguayGeojson" :colorScale="colorScale">
+    <l-map :center="[37.0902, -95.7129]" :zoom="4" style="height: 500px;" :options="mapOptions">
+      <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+      <l-choropleth-layer :data="pyDepartmentsData" titleKey="Geographic_Area" idKey="Geographic_Area" :value="value" :geojsonIdKey="name" :geojson="usGeojson" :colorScale="colorScale">
         <template slot-scope="props">
-          <l-info-control :item="props.currentItem" :unit="props.unit" title="Department" placeholder="Hover over a department"/>
-          <l-reference-chart title="Girls school enrolment" :colorScale="colorScale" :min="props.min" :max="props.max" position="topright"/>
+          <l-info-control :item="props.currentItem" :unit="props.unit" title="State" placeholder="Hover over a state"/>
+          <l-reference-chart title="US State Populations" :colorScale="colorScale" :min="props.min" :max="props.max" position="topright"/>
         </template>
       </l-choropleth-layer>
     </l-map>
@@ -15,31 +16,30 @@
 import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
 
 //import { geojson } from './data/py-departments-geojson'
-import paraguayGeojson from './data/paraguay.json'
-import { pyDepartmentsData } from './data/py-departments-data'
-import {LMap} from 'vue2-leaflet';
+import usGeojson from './data/us-states.json'
+import { pyDepartmentsData } from './data/usStatesData'
+import {LMap, LTileLayer} from 'vue2-leaflet';
 
 export default {
   name: "app",
   components: { 
     LMap,
+    LTileLayer,
     'l-info-control': InfoControl, 
     'l-reference-chart': ReferenceChart, 
     'l-choropleth-layer': ChoroplethLayer 
   },
   data() {
     return {
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       pyDepartmentsData,
-      paraguayGeojson,
+      usGeojson,
       colorScale: ["e7d090", "e9ae7b", "de7062"],
       value: {
-        key: "amount_w",
-        metric: "% girls"
+        key: "Total_Resident_Population",
+        metric: "Residents"
       },
-      extraValues: [{
-        key: "amount_m",
-        metric: "% boys"
-      }],
       mapOptions: {
         attributionControl: false
       },
@@ -57,6 +57,6 @@ body {
 }
 
 #map {
-  background-color: #eee;
+  background-color: rgb(0, 0, 0);
 }
 </style>
