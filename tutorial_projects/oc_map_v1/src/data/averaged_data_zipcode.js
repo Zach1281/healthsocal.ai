@@ -1,4 +1,4 @@
-export var ocMHData = [
+[
   {
     zip_code: 90620,
     mhi_avg: 24.66153846,

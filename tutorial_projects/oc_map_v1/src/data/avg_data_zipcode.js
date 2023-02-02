@@ -1,5 +1,6 @@
-export var dude= [
+export var ocMHData = [
   {
+    zip: "90620",
     zip_code: 90620,
     mhi_avg: 24.66153846,
     pmh_avg: 12.50769231,
@@ -12,6 +13,7 @@ export var dude= [
     bd_avg: 28.36923077
   },
   {
+    zip: "90621",
     zip_code: 90621,
     mhi_avg: 20.37777778,
     pmh_avg: 12.46666667,
@@ -24,6 +26,7 @@ export var dude= [
     bd_avg: 24.61111111
   },
   {
+    zip: "90622",
     zip_code: 90622,
     mhi_avg: 6.8,
     pmh_avg: 12.2,
@@ -36,6 +39,7 @@ export var dude= [
     bd_avg: 28.8
   },
   {
+    zip: "90623",
     zip_code: 90623,
     mhi_avg: 19.15714286,
     pmh_avg: 8.771428571,
@@ -48,6 +52,7 @@ export var dude= [
     bd_avg: 36.12857143
   },
   {
+    zip: "90630",
     zip_code: 90630,
     mhi_avg: 21.24,
     pmh_avg: 9.965,
@@ -60,6 +65,7 @@ export var dude= [
     bd_avg: 39.325
   },
   {
+    zip: "90631",
     zip_code: 90631,
     mhi_avg: 21.815,
     pmh_avg: 10.24,
@@ -72,6 +78,7 @@ export var dude= [
     bd_avg: 21.41
   },
   {
+    zip: "90632",
     zip_code: 90632,
     mhi_avg: 17.2,
     pmh_avg: 13,
@@ -84,6 +91,7 @@ export var dude= [
     bd_avg: 28.4
   },
   {
+    zip: "90633",
     zip_code: 90633,
     mhi_avg: 25.1,
     pmh_avg: 14.5,
@@ -96,6 +104,7 @@ export var dude= [
     bd_avg: 16.4
   },
   {
+    zip: "90680",
     zip_code: 90680,
     mhi_avg: 27.46666667,
     pmh_avg: 13.4,
@@ -108,6 +117,7 @@ export var dude= [
     bd_avg: 24.575
   },
   {
+    zip: "90720",
     zip_code: 90720,
     mhi_avg: 21.88888889,
     pmh_avg: 10.66666667,
@@ -120,6 +130,7 @@ export var dude= [
     bd_avg: 50.33333333
   },
   {
+    zip: "90721",
     zip_code: 90721,
     mhi_avg: 30.5,
     pmh_avg: 10.7,
@@ -132,6 +143,7 @@ export var dude= [
     bd_avg: 45.2
   },
   {
+    zip: "90740",
     zip_code: 90740,
     mhi_avg: 15.13,
     pmh_avg: 9.83,
@@ -144,6 +156,7 @@ export var dude= [
     bd_avg: 49
   },
   {
+    zip: "90742",
     zip_code: 90742,
     mhi_avg: 14,
     pmh_avg: 10.4,
@@ -156,6 +169,7 @@ export var dude= [
     bd_avg: 55.05
   },
   {
+    zip: "90743",
     zip_code: 90743,
     mhi_avg: 10.4,
     pmh_avg: 10.9,
@@ -168,6 +182,7 @@ export var dude= [
     bd_avg: 56.7
   },
   {
+    zip: "92602",
     zip_code: 92602,
     mhi_avg: 5.25,
     pmh_avg: 9.525,
@@ -180,6 +195,7 @@ export var dude= [
     bd_avg: 19.25
   },
   {
+    zip: "92603",
     zip_code: 92603,
     mhi_avg: 8.52,
     pmh_avg: 9.4,
@@ -192,6 +208,7 @@ export var dude= [
     bd_avg: 60.4
   },
   {
+    zip: "92604",
     zip_code: 92604,
     mhi_avg: 24.43333333,
     pmh_avg: 10.18888889,
@@ -204,6 +221,7 @@ export var dude= [
     bd_avg: 63.98888889
   },
   {
+    zip: "92605",
     zip_code: 92605,
     mhi_avg: 6.8,
     pmh_avg: 12.4,
@@ -216,6 +234,7 @@ export var dude= [
     bd_avg: 47.8
   },
   {
+    zip: "92606",
     zip_code: 92606,
     mhi_avg: 17.65,
     pmh_avg: 10.875,
@@ -228,6 +247,7 @@ export var dude= [
     bd_avg: 30.325
   },
   {
+    zip: "92607",
     zip_code: 92607,
     mhi_avg: 3.7,
     pmh_avg: 10.4,
@@ -240,6 +260,7 @@ export var dude= [
     bd_avg: 52.5
   },
   {
+    zip: "92610",
     zip_code: 92610,
     mhi_avg: 3.75,
     pmh_avg: 10.425,
@@ -252,6 +273,7 @@ export var dude= [
     bd_avg: 46.075
   },
   {
+    zip: "92612",
     zip_code: 92612,
     mhi_avg: 26.41428571,
     pmh_avg: 13.32857143,
@@ -264,6 +286,7 @@ export var dude= [
     bd_avg: 58.61428571
   },
   {
+    zip: "92614",
     zip_code: 92614,
     mhi_avg: 19.05714286,
     pmh_avg: 10.72857143,
@@ -276,6 +299,7 @@ export var dude= [
     bd_avg: 58.38571429
   },
   {
+    zip: "92615",
     zip_code: 92615,
     mhi_avg: 10.9,
     pmh_avg: 11.3,
@@ -288,6 +312,7 @@ export var dude= [
     bd_avg: 53.6
   },
   {
+    zip: "92616",
     zip_code: 92616,
     mhi_avg: 22.1,
     pmh_avg: 20.4,
@@ -300,6 +325,7 @@ export var dude= [
     bd_avg: 65.2
   },
   {
+    zip: "92617",
     zip_code: 92617,
     mhi_avg: 10.8,
     pmh_avg: 18,
@@ -312,6 +338,7 @@ export var dude= [
     bd_avg: 84.7
   },
   {
+    zip: "92618",
     zip_code: 92618,
     mhi_avg: 16.05384615,
     pmh_avg: 10.36153846,
@@ -324,6 +351,7 @@ export var dude= [
     bd_avg: 33.03846154
   },
   {
+    zip: "92619",
     zip_code: 92619,
     mhi_avg: 2.1,
     pmh_avg: 12.7,
@@ -336,6 +364,7 @@ export var dude= [
     bd_avg: 69.9
   },
   {
+    zip: "92620",
     zip_code: 92620,
     mhi_avg: 10.81428571,
     pmh_avg: 9.771428571,
@@ -348,6 +377,7 @@ export var dude= [
     bd_avg: 18.87142857
   },
   {
+    zip: "92623",
     zip_code: 92623,
     mhi_avg: 24.6,
     pmh_avg: 12.4,
@@ -360,6 +390,7 @@ export var dude= [
     bd_avg: 0
   },
   {
+    zip: "92624",
     zip_code: 92624,
     mhi_avg: 23.03333333,
     pmh_avg: 10.9,
@@ -372,6 +403,7 @@ export var dude= [
     bd_avg: 45.36666667
   },
   {
+    zip: "92625",
     zip_code: 92625,
     mhi_avg: 12.4,
     pmh_avg: 9.266666667,
@@ -384,6 +416,7 @@ export var dude= [
     bd_avg: 60.66666667
   },
   {
+    zip: "92626",
     zip_code: 92626,
     mhi_avg: 15.82666667,
     pmh_avg: 12.81333333,
@@ -396,6 +429,7 @@ export var dude= [
     bd_avg: 38.78666667
   },
   {
+    zip: "92627",
     zip_code: 92627,
     mhi_avg: 14.82631579,
     pmh_avg: 13.08421053,
@@ -408,6 +442,7 @@ export var dude= [
     bd_avg: 44.39473684
   },
   {
+    zip: "92628",
     zip_code: 92628,
     mhi_avg: 26.6,
     pmh_avg: 11.7,
@@ -420,6 +455,7 @@ export var dude= [
     bd_avg: 40.2
   },
   {
+    zip: "92629",
     zip_code: 92629,
     mhi_avg: 19.9,
     pmh_avg: 10.56,
@@ -432,6 +468,7 @@ export var dude= [
     bd_avg: 55.06
   },
   {
+    zip: "92630",
     zip_code: 92630,
     mhi_avg: 14.52142857,
     pmh_avg: 11.7,
@@ -444,6 +481,7 @@ export var dude= [
     bd_avg: 46.02857143
   },
   {
+    zip: "92637",
     zip_code: 92637,
     mhi_avg: 38.13333333,
     pmh_avg: 8.911111111,
@@ -456,6 +494,7 @@ export var dude= [
     bd_avg: 45.3
   },
   {
+    zip: "92646",
     zip_code: 92646,
     mhi_avg: 16.675,
     pmh_avg: 11.225,
@@ -468,6 +507,7 @@ export var dude= [
     bd_avg: 45.44375
   },
   {
+    zip: "92647",
     zip_code: 92647,
     mhi_avg: 25.3375,
     pmh_avg: 12.45,
@@ -480,6 +520,7 @@ export var dude= [
     bd_avg: 36.825
   },
   {
+    zip: "92648",
     zip_code: 92648,
     mhi_avg: 19.60666667,
     pmh_avg: 11.9,
@@ -492,6 +533,7 @@ export var dude= [
     bd_avg: 42.18
   },
   {
+    zip: "92649",
     zip_code: 92649,
     mhi_avg: 17.23571429,
     pmh_avg: 11.45,
@@ -504,6 +546,7 @@ export var dude= [
     bd_avg: 45.82857143
   },
   {
+    zip: "92651",
     zip_code: 92651,
     mhi_avg: 35.8625,
     pmh_avg: 9.5375,
@@ -516,6 +559,7 @@ export var dude= [
     bd_avg: 53.35
   },
   {
+    zip: "92652",
     zip_code: 92652,
     mhi_avg: 30.25,
     pmh_avg: 10.15,
@@ -528,6 +572,7 @@ export var dude= [
     bd_avg: 62.65
   },
   {
+    zip: "92653",
     zip_code: 92653,
     mhi_avg: 26.30909091,
     pmh_avg: 9.863636364,
@@ -540,6 +585,7 @@ export var dude= [
     bd_avg: 47.85454545
   },
   {
+    zip: "92654",
     zip_code: 92654,
     mhi_avg: 92.7,
     pmh_avg: 9.9,
@@ -552,6 +598,7 @@ export var dude= [
     bd_avg: 33.5
   },
   {
+    zip: "92655",
     zip_code: 92655,
     mhi_avg: 63.45,
     pmh_avg: 12.5,
@@ -564,6 +611,7 @@ export var dude= [
     bd_avg: 26.75
   },
   {
+    zip: "92656",
     zip_code: 92656,
     mhi_avg: 10.70909091,
     pmh_avg: 11.1,
@@ -576,6 +624,7 @@ export var dude= [
     bd_avg: 57.24545455
   },
   {
+    zip: "92657",
     zip_code: 92657,
     mhi_avg: 13.95,
     pmh_avg: 9.1,
@@ -588,6 +637,7 @@ export var dude= [
     bd_avg: 74.5
   },
   {
+    zip: "92658",
     zip_code: 92658,
     mhi_avg: 24.8,
     pmh_avg: 9.7,
@@ -600,6 +650,7 @@ export var dude= [
     bd_avg: 79.7
   },
   {
+    zip: "92659",
     zip_code: 92659,
     mhi_avg: 10.1,
     pmh_avg: 10,
@@ -612,6 +663,7 @@ export var dude= [
     bd_avg: 60.8
   },
   {
+    zip: "92660",
     zip_code: 92660,
     mhi_avg: 18.93076923,
     pmh_avg: 10.53846154,
@@ -624,6 +676,7 @@ export var dude= [
     bd_avg: 59.40769231
   },
   {
+    zip: "92661",
     zip_code: 92661,
     mhi_avg: 35.1,
     pmh_avg: 10.9,
@@ -636,6 +689,7 @@ export var dude= [
     bd_avg: 58.3
   },
   {
+    zip: "92662",
     zip_code: 92662,
     mhi_avg: 20.6,
     pmh_avg: 8.5,
@@ -648,6 +702,7 @@ export var dude= [
     bd_avg: 70.5
   },
   {
+    zip: "92663",
     zip_code: 92663,
     mhi_avg: 17.92222222,
     pmh_avg: 10.98888889,
@@ -660,6 +715,7 @@ export var dude= [
     bd_avg: 57.5
   },
   {
+    zip: "92672",
     zip_code: 92672,
     mhi_avg: 18.17272727,
     pmh_avg: 10.45454545,
@@ -672,6 +728,7 @@ export var dude= [
     bd_avg: 32.22727273
   },
   {
+    zip: "92673",
     zip_code: 92673,
     mhi_avg: 15.56666667,
     pmh_avg: 10.91666667,
@@ -684,6 +741,7 @@ export var dude= [
     bd_avg: 40.2
   },
   {
+    zip: "92674",
     zip_code: 92674,
     mhi_avg: 21.85,
     pmh_avg: 11.3,
@@ -696,6 +754,7 @@ export var dude= [
     bd_avg: 51.6
   },
   {
+    zip: "92675",
     zip_code: 92675,
     mhi_avg: 15.6,
     pmh_avg: 11.4,
@@ -708,6 +767,7 @@ export var dude= [
     bd_avg: 34.49166667
   },
   {
+    zip: "92676",
     zip_code: 92676,
     mhi_avg: 2.383333333,
     pmh_avg: 11.15,
@@ -720,6 +780,7 @@ export var dude= [
     bd_avg: 41.55
   },
   {
+    zip: "92677",
     zip_code: 92677,
     mhi_avg: 10.38125,
     pmh_avg: 10.95625,
@@ -732,6 +793,7 @@ export var dude= [
     bd_avg: 55.66875
   },
   {
+    zip: "92678",
     zip_code: 92678,
     mhi_avg: 0.9,
     pmh_avg: 11.6,
@@ -744,6 +806,7 @@ export var dude= [
     bd_avg: 45.7
   },
   {
+    zip: "92679",
     zip_code: 92679,
     mhi_avg: 4.44,
     pmh_avg: 11.03,
@@ -756,6 +819,7 @@ export var dude= [
     bd_avg: 50.76
   },
   {
+    zip: "92683",
     zip_code: 92683,
     mhi_avg: 39.05909091,
     pmh_avg: 12.55909091,
@@ -768,6 +832,7 @@ export var dude= [
     bd_avg: 26.4
   },
   {
+    zip: "92684",
     zip_code: 92684,
     mhi_avg: 31.4,
     pmh_avg: 13.35,
@@ -780,6 +845,7 @@ export var dude= [
     bd_avg: 22.95
   },
   {
+    zip: "92685",
     zip_code: 92685,
     mhi_avg: 45.1,
     pmh_avg: 13.7,
@@ -792,6 +858,7 @@ export var dude= [
     bd_avg: 31.5
   },
   {
+    zip: "92688",
     zip_code: 92688,
     mhi_avg: 9.8,
     pmh_avg: 11.26,
@@ -804,6 +871,7 @@ export var dude= [
     bd_avg: 45.53
   },
   {
+    zip: "92690",
     zip_code: 92690,
     mhi_avg: 30.3,
     pmh_avg: 13.8,
@@ -816,6 +884,7 @@ export var dude= [
     bd_avg: 29.6
   },
   {
+    zip: "92691",
     zip_code: 92691,
     mhi_avg: 15.31333333,
     pmh_avg: 11.28666667,
@@ -828,6 +897,7 @@ export var dude= [
     bd_avg: 49.41333333
   },
   {
+    zip: "92692",
     zip_code: 92692,
     mhi_avg: 11.45789474,
     pmh_avg: 10.9,
@@ -840,6 +910,7 @@ export var dude= [
     bd_avg: 51.32105263
   },
   {
+    zip: "92693",
     zip_code: 92693,
     mhi_avg: 11.8,
     pmh_avg: 14.4,
@@ -852,6 +923,7 @@ export var dude= [
     bd_avg: 25.6
   },
   {
+    zip: "92694",
     zip_code: 92694,
     mhi_avg: 9.183333333,
     pmh_avg: 10.26666667,
@@ -864,6 +936,7 @@ export var dude= [
     bd_avg: 44.01666667
   },
   {
+    zip: "92697",
     zip_code: 92697,
     mhi_avg: 10.8,
     pmh_avg: 18,
@@ -876,6 +949,7 @@ export var dude= [
     bd_avg: 84.7
   },
   {
+    zip: "92698",
     zip_code: 92698,
     mhi_avg: 10.2,
     pmh_avg: 12.2,
@@ -888,6 +962,7 @@ export var dude= [
     bd_avg: 45
   },
   {
+    zip: "92701",
     zip_code: 92701,
     mhi_avg: 13.31333333,
     pmh_avg: 16.39333333,
@@ -900,6 +975,7 @@ export var dude= [
     bd_avg: 13.28
   },
   {
+    zip: "92702",
     zip_code: 92702,
     mhi_avg: 31.5,
     pmh_avg: 18,
@@ -912,6 +988,7 @@ export var dude= [
     bd_avg: 11.7
   },
   {
+    zip: "92703",
     zip_code: 92703,
     mhi_avg: 15.88181818,
     pmh_avg: 15.71818182,
@@ -924,6 +1001,7 @@ export var dude= [
     bd_avg: 12.19090909
   },
   {
+    zip: "92704",
     zip_code: 92704,
     mhi_avg: 10.75833333,
     pmh_avg: 14.05,
@@ -936,6 +1014,7 @@ export var dude= [
     bd_avg: 18.79166667
   },
   {
+    zip: "92705",
     zip_code: 92705,
     mhi_avg: 17.0826087,
     pmh_avg: 12.04347826,
@@ -948,6 +1027,7 @@ export var dude= [
     bd_avg: 36.78695652
   },
   {
+    zip: "92706",
     zip_code: 92706,
     mhi_avg: 16.1,
     pmh_avg: 14.39230769,
@@ -960,6 +1040,7 @@ export var dude= [
     bd_avg: 16.75384615
   },
   {
+    zip: "92707",
     zip_code: 92707,
     mhi_avg: 9.83125,
     pmh_avg: 14.71875,
@@ -972,6 +1053,7 @@ export var dude= [
     bd_avg: 16.23125
   },
   {
+    zip: "92708",
     zip_code: 92708,
     mhi_avg: 23.48888889,
     pmh_avg: 11.36111111,
@@ -984,6 +1066,7 @@ export var dude= [
     bd_avg: 36.91111111
   },
   {
+    zip: "92711",
     zip_code: 92711,
     mhi_avg: 28.1,
     pmh_avg: 12.5,
@@ -996,6 +1079,7 @@ export var dude= [
     bd_avg: 31.6
   },
   {
+    zip: "92728",
     zip_code: 92728,
     mhi_avg: 21.4,
     pmh_avg: 11.1,
@@ -1008,6 +1092,7 @@ export var dude= [
     bd_avg: 40.3
   },
   {
+    zip: "92735",
     zip_code: 92735,
     mhi_avg: 2.8,
     pmh_avg: 17.9,
@@ -1020,6 +1105,7 @@ export var dude= [
     bd_avg: 3.6
   },
   {
+    zip: "92780",
     zip_code: 92780,
     mhi_avg: 15.90625,
     pmh_avg: 12.525,
@@ -1032,6 +1118,7 @@ export var dude= [
     bd_avg: 32.675
   },
   {
+    zip: "92781",
     zip_code: 92781,
     mhi_avg: 20.6,
     pmh_avg: 11.8,
@@ -1044,6 +1131,7 @@ export var dude= [
     bd_avg: 31.9
   },
   {
+    zip: "92782",
     zip_code: 92782,
     mhi_avg: 9.071428571,
     pmh_avg: 9.957142857,
@@ -1056,6 +1144,7 @@ export var dude= [
     bd_avg: 38.9
   },
   {
+    zip: "92799",
     zip_code: 92799,
     mhi_avg: 7.9,
     pmh_avg: 14.2,
@@ -1068,6 +1157,7 @@ export var dude= [
     bd_avg: 24.9
   },
   {
+    zip: "92801",
     zip_code: 92801,
     mhi_avg: 28.87727273,
     pmh_avg: 13.95,
@@ -1080,6 +1170,7 @@ export var dude= [
     bd_avg: 21.74090909
   },
   {
+    zip: "92802",
     zip_code: 92802,
     mhi_avg: 18.95,
     pmh_avg: 13.12142857,
@@ -1092,6 +1183,7 @@ export var dude= [
     bd_avg: 18.9
   },
   {
+    zip: "92803",
     zip_code: 92803,
     mhi_avg: 17.7,
     pmh_avg: 13.9,
@@ -1104,6 +1196,7 @@ export var dude= [
     bd_avg: 22.7
   },
   {
+    zip: "92804",
     zip_code: 92804,
     mhi_avg: 27.36923077,
     pmh_avg: 13.62307692,
@@ -1116,6 +1209,7 @@ export var dude= [
     bd_avg: 23.05384615
   },
   {
+    zip: "92805",
     zip_code: 92805,
     mhi_avg: 18.1875,
     pmh_avg: 13.95,
@@ -1128,6 +1222,7 @@ export var dude= [
     bd_avg: 16.30625
   },
   {
+    zip: "92806",
     zip_code: 92806,
     mhi_avg: 15.81176471,
     pmh_avg: 12.55294118,
@@ -1140,6 +1235,7 @@ export var dude= [
     bd_avg: 22.43529412
   },
   {
+    zip: "92807",
     zip_code: 92807,
     mhi_avg: 12.8125,
     pmh_avg: 10.675,
@@ -1152,6 +1248,7 @@ export var dude= [
     bd_avg: 38.46875
   },
   {
+    zip: "92808",
     zip_code: 92808,
     mhi_avg: 6.72,
     pmh_avg: 10.56,
@@ -1164,6 +1261,7 @@ export var dude= [
     bd_avg: 54.2
   },
   {
+    zip: "92809",
     zip_code: 92809,
     mhi_avg: 11.4,
     pmh_avg: 10.7,
@@ -1176,6 +1274,7 @@ export var dude= [
     bd_avg: 60.2
   },
   {
+    zip: "92812",
     zip_code: 92812,
     mhi_avg: 0,
     pmh_avg: 0,
@@ -1188,6 +1287,7 @@ export var dude= [
     bd_avg: 0
   },
   {
+    zip: "92814",
     zip_code: 92814,
     mhi_avg: 37.2,
     pmh_avg: 12.1,
@@ -1200,6 +1300,7 @@ export var dude= [
     bd_avg: 27.7
   },
   {
+    zip: "92815",
     zip_code: 92815,
     mhi_avg: 20.2,
     pmh_avg: 16,
@@ -1212,6 +1313,7 @@ export var dude= [
     bd_avg: 0
   },
   {
+    zip: "92816",
     zip_code: 92816,
     mhi_avg: 24.2,
     pmh_avg: 13,
@@ -1224,6 +1326,7 @@ export var dude= [
     bd_avg: 28
   },
   {
+    zip: "92817",
     zip_code: 92817,
     mhi_avg: 11.1,
     pmh_avg: 11.5,
@@ -1236,6 +1339,7 @@ export var dude= [
     bd_avg: 35.2
   },
   {
+    zip: "92821",
     zip_code: 92821,
     mhi_avg: 20.15833333,
     pmh_avg: 11.29166667,
@@ -1248,6 +1352,7 @@ export var dude= [
     bd_avg: 39.35833333
   },
   {
+    zip: "92822",
     zip_code: 92822,
     mhi_avg: 25.9,
     pmh_avg: 12.8,
@@ -1260,6 +1365,7 @@ export var dude= [
     bd_avg: 27.7
   },
   {
+    zip: "92823",
     zip_code: 92823,
     mhi_avg: 19.65,
     pmh_avg: 10.5,
@@ -1272,6 +1378,7 @@ export var dude= [
     bd_avg: 35.95
   },
   {
+    zip: "92825",
     zip_code: 92825,
     mhi_avg: 25.8,
     pmh_avg: 18.2,
@@ -1284,6 +1391,7 @@ export var dude= [
     bd_avg: 16.7
   },
   {
+    zip: "92831",
     zip_code: 92831,
     mhi_avg: 22.99090909,
     pmh_avg: 13.2,
@@ -1296,6 +1404,7 @@ export var dude= [
     bd_avg: 41.17272727
   },
   {
+    zip: "92832",
     zip_code: 92832,
     mhi_avg: 32.73636364,
     pmh_avg: 13.37272727,
@@ -1308,6 +1417,7 @@ export var dude= [
     bd_avg: 34.18181818
   },
   {
+    zip: "92833",
     zip_code: 92833,
     mhi_avg: 29.15384615,
     pmh_avg: 11.53076923,
@@ -1320,6 +1430,7 @@ export var dude= [
     bd_avg: 33.05384615
   },
   {
+    zip: "92834",
     zip_code: 92834,
     mhi_avg: 25.25,
     pmh_avg: 16.45,
@@ -1332,6 +1443,7 @@ export var dude= [
     bd_avg: 39.55
   },
   {
+    zip: "92835",
     zip_code: 92835,
     mhi_avg: 25.2625,
     pmh_avg: 11.28125,
@@ -1344,6 +1456,7 @@ export var dude= [
     bd_avg: 44.55
   },
   {
+    zip: "92836",
     zip_code: 92836,
     mhi_avg: 34.2,
     pmh_avg: 12.4,
@@ -1356,6 +1469,7 @@ export var dude= [
     bd_avg: 50
   },
   {
+    zip: "92837",
     zip_code: 92837,
     mhi_avg: 56,
     pmh_avg: 11.9,
@@ -1368,6 +1482,7 @@ export var dude= [
     bd_avg: 33.5
   },
   {
+    zip: "92838",
     zip_code: 92838,
     mhi_avg: 47.7,
     pmh_avg: 8.8,
@@ -1380,6 +1495,7 @@ export var dude= [
     bd_avg: 65.6
   },
   {
+    zip: "92840",
     zip_code: 92840,
     mhi_avg: 23.95625,
     pmh_avg: 13.3,
@@ -1392,6 +1508,7 @@ export var dude= [
     bd_avg: 22.34375
   },
   {
+    zip: "92841",
     zip_code: 92841,
     mhi_avg: 29.64375,
     pmh_avg: 13.25625,
@@ -1404,6 +1521,7 @@ export var dude= [
     bd_avg: 25.3625
   },
   {
+    zip: "92842",
     zip_code: 92842,
     mhi_avg: 29.4,
     pmh_avg: 14,
@@ -1416,6 +1534,7 @@ export var dude= [
     bd_avg: 29.7
   },
   {
+    zip: "92843",
     zip_code: 92843,
     mhi_avg: 22.37647059,
     pmh_avg: 13.10588235,
@@ -1428,6 +1547,7 @@ export var dude= [
     bd_avg: 18.78823529
   },
   {
+    zip: "92844",
     zip_code: 92844,
     mhi_avg: 36.53,
     pmh_avg: 12.91,
@@ -1440,6 +1560,7 @@ export var dude= [
     bd_avg: 23.48
   },
   {
+    zip: "92845",
     zip_code: 92845,
     mhi_avg: 9.333333333,
     pmh_avg: 11.65,
@@ -1452,6 +1573,7 @@ export var dude= [
     bd_avg: 35.83333333
   },
   {
+    zip: "92846",
     zip_code: 92846,
     mhi_avg: 20.9,
     pmh_avg: 12,
@@ -1464,6 +1586,7 @@ export var dude= [
     bd_avg: 36.9
   },
   {
+    zip: "92856",
     zip_code: 92856,
     mhi_avg: 34.6,
     pmh_avg: 15.1,
@@ -1476,6 +1599,7 @@ export var dude= [
     bd_avg: 32.3
   },
   {
+    zip: "92857",
     zip_code: 92857,
     mhi_avg: 14.3,
     pmh_avg: 13.1,
@@ -1488,6 +1612,7 @@ export var dude= [
     bd_avg: 31.6
   },
   {
+    zip: "92859",
     zip_code: 92859,
     mhi_avg: 10.8,
     pmh_avg: 11.9,
@@ -1500,6 +1625,7 @@ export var dude= [
     bd_avg: 34.1
   },
   {
+    zip: "92861",
     zip_code: 92861,
     mhi_avg: 11.6,
     pmh_avg: 10.88,
@@ -1512,6 +1638,7 @@ export var dude= [
     bd_avg: 50.7
   },
   {
+    zip: "92863",
     zip_code: 92863,
     mhi_avg: 5.4,
     pmh_avg: 13.7,
@@ -1524,6 +1651,7 @@ export var dude= [
     bd_avg: 33.7
   },
   {
+    zip: "92865",
     zip_code: 92865,
     mhi_avg: 12.1,
     pmh_avg: 13.25,
@@ -1536,6 +1664,7 @@ export var dude= [
     bd_avg: 35.75
   },
   {
+    zip: "92866",
     zip_code: 92866,
     mhi_avg: 17.55,
     pmh_avg: 14.475,
@@ -1548,6 +1677,7 @@ export var dude= [
     bd_avg: 33.875
   },
   {
+    zip: "92867",
     zip_code: 92867,
     mhi_avg: 10.73529412,
     pmh_avg: 12.25294118,
@@ -1560,6 +1690,7 @@ export var dude= [
     bd_avg: 42.70588235
   },
   {
+    zip: "92868",
     zip_code: 92868,
     mhi_avg: 18.62857143,
     pmh_avg: 13.55714286,
@@ -1572,6 +1703,7 @@ export var dude= [
     bd_avg: 17.85714286
   },
   {
+    zip: "92869",
     zip_code: 92869,
     mhi_avg: 14.66,
     pmh_avg: 10.99,
@@ -1584,6 +1716,7 @@ export var dude= [
     bd_avg: 50.04
   },
   {
+    zip: "92870",
     zip_code: 92870,
     mhi_avg: 12.825,
     pmh_avg: 11.295,
@@ -1596,6 +1729,7 @@ export var dude= [
     bd_avg: 36.05
   },
   {
+    zip: "92871",
     zip_code: 92871,
     mhi_avg: 27.7,
     pmh_avg: 10.2,
@@ -1608,6 +1742,7 @@ export var dude= [
     bd_avg: 43.9
   },
   {
+    zip: "92885",
     zip_code: 92885,
     mhi_avg: 32.1,
     pmh_avg: 11.6,
@@ -1620,6 +1755,7 @@ export var dude= [
     bd_avg: 41.5
   },
   {
+    zip: "92886",
     zip_code: 92886,
     mhi_avg: 12.15,
     pmh_avg: 10.71875,
@@ -1632,6 +1768,7 @@ export var dude= [
     bd_avg: 46.5625
   },
   {
+    zip: "92887",
     zip_code: 92887,
     mhi_avg: 5.714285714,
     pmh_avg: 10.5,

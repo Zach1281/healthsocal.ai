@@ -17,7 +17,7 @@ import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
 
 //import { geojson } from './data/py-departments-geojson'
 import ocGeojson from './data/ocGeoZipCode.json'
-import { ocMHData } from './data/averaged_data_zipcode'
+import { ocMHData } from './data/avg_data_zipcode'
 import {LMap, LTileLayer} from 'vue2-leaflet';
 
 export default {
