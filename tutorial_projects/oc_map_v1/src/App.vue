@@ -2,10 +2,10 @@
   <div id="app">
     <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 500px;" :options="mapOptions">
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-      <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
-        <template slot-scope="props">
-          <l-info-control :item="props.currentItem" :unit="props.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-          <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="props.min" :max="props.max" position="topright"/>
+      <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <template slot-scope="info">
+          <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
+          <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
         </template>
       </l-choropleth-layer>
     </l-map>
@@ -40,6 +40,15 @@ export default {
         key: "mhi_avg",
         metric: "Mental Health Index Average"
       },
+      extraValues: [{
+        key: "pmh_avg",
+        metric: "Poor Mental Health"
+      },
+      {
+        key: "hei_avg",
+        metric: "HEI"
+
+      }],
       mapOptions: {
         attributionControl: false
       },
