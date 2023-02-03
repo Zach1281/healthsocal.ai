@@ -35,7 +35,7 @@ export default {
       attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       ocMHData,
       ocGeojson,
-      colorScale: ["e7d090", "e9ae7b", "de7062"],
+      colorScale: ["71ae46", "ebe12a", "ac2026"],
       value: {
         key: "mhi_avg",
         metric: "Mental Health Index Average"
