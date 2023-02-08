@@ -3,11 +3,13 @@
     <input type="radio" id="map1" value="map1" v-model="selectedMap" @change="updateMap">
     <label for="map1">MHI</label>
     <input type="radio" id="map2" value="map2" v-model="selectedMap" @change="updateMap">
-    <label for="map2">SDOH</label>
+    <label for="map2">Food Stamps</label>
+    <input type="radio" id="map3" value="map3" v-model="selectedMap" @change="updateMap">
+    <label for="map3">Economic Stability</label>
     <div v-if="selectedMap === 'map1'" id="app">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -19,7 +21,20 @@
     <div v-if="selectedMap === 'map2'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="value" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+          <template slot-scope="info">
+            <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
+            <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+          </template>
+        </l-choropleth-layer>
+      </l-map>
+    </div>
+  </div>
+  <div>
+    <div v-if="selectedMap === 'map3'">
+      <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -58,9 +73,17 @@ export default {
         sdohData,
         selectedMap: 'map2',
         colorScale: ["71ae46", "ebe12a", "ac2026"],
-        value: {
+        foodValue: {
           key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC",
           metric: "Food Stamps"
+        },
+        ocValue: {
+          key: "mhi_avg",
+          metric: "Mental Health Index"
+        },
+        econValue:{
+          key: "ACS_PCT_UNEMPLOY_ZC",
+          metric: "% Unemployed"
         },
         mapOptions: {
           attributionControl: false
@@ -70,8 +93,8 @@ export default {
     
   },
   methods: {
-    updateMap(){  
-      console.log('Map updated:', this.selectedMap)
+    updateMap(){
+      
     }
   }
 }
