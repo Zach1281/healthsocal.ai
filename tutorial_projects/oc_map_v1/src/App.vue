@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+    <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 800px;" :options="mapOptions">
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
       <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
         <template slot-scope="info">
