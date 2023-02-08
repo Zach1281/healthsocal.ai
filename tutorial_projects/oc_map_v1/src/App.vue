@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 800px;" :options="mapOptions">
+    <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
       <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
         <template slot-scope="info">
@@ -61,8 +61,8 @@ export default {
 @import "../node_modules/leaflet/dist/leaflet.css";
 body {
   background-color: #e7d090;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #map {
