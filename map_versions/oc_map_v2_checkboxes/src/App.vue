@@ -1,38 +1,33 @@
 <template>
-  <div>
-    <input type="radio" id="map1" value="map1" v-model="selectedMap" @change="updateMap">
-    <label for="map1">MHI</label>
-    <input type="radio" id="map2" value="map2" v-model="selectedMap" @change="updateMap">
-    <label for="map2">SDOH</label>
-    <div v-if="selectedMap === 'map1'" id="app">
-      <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
-        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
-          <template slot-scope="info">
+    <div>
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
+          <l-tile-layer :url="url" :attribution="attribution"/>
+          <l-choropleth-layer v-for="layer in layers" :key="layer.id" :data="layer.data" :titleKey="layer.titleKey" :idKey="layer.idKey" :value="layer.value" 
+                                                      :geojsonIdKey="layer.geojsonIdKey" :geojson="layer.geojson" :colorScale="layer.colorScale" :visible='layer.visible'/>
+        </l-map>
+        <div v-for="layer in layers" :key="layer.id">
+          <label>
+            <input type='checkbox' v-model='layer.visible' v-on:click='toggleLayer()'/>
+            {{ layer.name }}
+          </label>
+        </div>
+        <!--<template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
           </template>
-        </l-choropleth-layer>
-      </l-map>
+      <div v-for="layer in layers" :key="layer.id">
+        <label>
+          <input type='checkbox' v-model="layer.visible" v-on:change="layer.visible">
+          {{ layer.name }}
+        </label>
+      </div>-->
     </div>
-  <div>
-    <div v-if="selectedMap === 'map2'">
-      <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
-        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="value" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
-          <template slot-scope="info">
-            <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-            <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
-          </template>
-        </l-choropleth-layer>
-      </l-map>
-    </div>
-  </div>
-</div>
+            <!--<l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
+            <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>-->
 </template>
 
 <script>
-import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
+import { ChoroplethLayer } from 'vue-choropleth'
 
 //import { geojson } from './data/py-departments-geojson'
 import { sdohData } from './data/sdohData'
@@ -45,33 +40,33 @@ export default {
   components: { 
     LMap,
     LTileLayer,
-    'l-info-control': InfoControl, 
-    'l-reference-chart': ReferenceChart, 
-    'l-choropleth-layer': ChoroplethLayer 
+    //'l-info-control': InfoControl, 
+    //'l-reference-chart': ReferenceChart, 
+    'l-choropleth-layer': ChoroplethLayer,
   },
   data() {
       return {
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-        ocMHData,
-        ocGeojson,
-        sdohData,
-        selectedMap: 'map2',
-        colorScale: ["71ae46", "ebe12a", "ac2026"],
-        value: {
-          key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC",
-          metric: "Food Stamps"
-        },
+        layers: [
+          { id: 1, idKey: "zip_code", name: 'MHI', titleKey:'zip', data: ocMHData, colorScale: ["71ae46", "ebe12a", "ac2026"], 
+            value: { key: "mhi_avg", metric: "Mental Health Index Average"}, geojsonIdKey:"dpto", geojson: ocGeojson, currentStrokeColor: '3d3213', visible: true
+          },
+          { id: 2, idKey: "ZCTA", name: 'SDOH', titleKey:"ZIPCODE", data: sdohData, colorScale: ["71ae46", "ebe12a", "ac2026"], 
+            value: { key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC", metric: "Food Stamps"}, geojsonIdKey:"dpto", geojson: ocGeojson, currentStrokeColor: '3d3213', visible: false
+          }
+        ],
+        checked: true,
         mapOptions: {
-          attributionControl: false
-        },
-        currentStrokeColor: '3d3213'
+              attributionControl: true
+            }
       }
     
   },
   methods: {
-    updateMap(){  
-      console.log('Map updated:', this.selectedMap)
+    toggleLayer() {
+      console.log('joe')
+      //this.layers[index].visible = !this.layers[index].visible
     }
   }
 }
