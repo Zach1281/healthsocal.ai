@@ -7,8 +7,8 @@
         </l-map>
         <div v-for="layer in layers" :key="layer.id">
           <label>
-            <input type='checkbox' v-model='layer.visible' v-on:click='toggleLayer()'/>
-            {{ layer.name }}
+            <input type='checkbox' v-model='layer.visible' v-on:click=toggleLayer(layer)/>
+              {{ layer.name }}
           </label>
         </div>
         <!--<template slot-scope="info">
@@ -64,8 +64,10 @@ export default {
     
   },
   methods: {
-    toggleLayer() {
+    toggleLayer(layer) {
       console.log('joe')
+      layer.name = 'JOE'
+
       //this.layers[index].visible = !this.layers[index].visible
     }
   }
