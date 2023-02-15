@@ -101,7 +101,7 @@ export default {
         ocMHData,
         ocGeojson,
         sdohData,
-        selectedMap: 'map2',
+        selectedMap: 'map1',
         colorScale: ["71ae46", "ebe12a", "ac2026"],
         foodValue: {
           key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC",
@@ -120,7 +120,7 @@ export default {
           metric: "Distance Nearest Health Clinic"
         },
         eduValue: {
-          key: "ACS_PCT_NO_WORK_NO_SCHL_16_19_ZC",
+          key: "ACS_TOT_POP_WT_ZC",
           metric: "% Teens and Adults Unemployed and Not in School"
         },
         mapOptions: {
