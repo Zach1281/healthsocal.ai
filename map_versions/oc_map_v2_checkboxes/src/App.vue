@@ -3,11 +3,11 @@
         <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"/>
           <l-choropleth-layer v-for="layer in layers" :key="layer.id" :data="layer.data" :titleKey="layer.titleKey" :idKey="layer.idKey" :value="layer.value" 
-                                                      :geojsonIdKey="layer.geojsonIdKey" :geojson="layer.geojson" :colorScale="layer.colorScale" :visible='layer.visible'/>
+                                                      :geojsonIdKey="layer.geojsonIdKey" :geojson="layer.geojson" :colorScale="layer.colorScale" :visible="layer.visible"/>
         </l-map>
         <div v-for="layer in layers" :key="layer.id">
           <label>
-            <input type='checkbox' v-model='layer.visible' v-on:click='toggleLayer()'/>
+            <input type='checkbox' v-model="layer.visible" v-on:click='toggleMap(layer)'/>
             {{ layer.name }}
           </label>
         </div>
@@ -56,17 +56,18 @@ export default {
             value: { key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC", metric: "Food Stamps"}, geojsonIdKey:"dpto", geojson: ocGeojson, currentStrokeColor: '3d3213', visible: false
           }
         ],
-        checked: true,
         mapOptions: {
               attributionControl: true
             }
       }
-    
+
   },
   methods: {
-    toggleLayer() {
-      console.log('joe')
-      //this.layers[index].visible = !this.layers[index].visible
+    toggleMap(layer){
+      console.log(layer.id)
+      console.log(layer.visible)
+      layer.visible = !layer.visible
+      console.log(layer.visible)
     }
   }
 }
