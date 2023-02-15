@@ -15,7 +15,7 @@
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
         <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
-            <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
+              <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
           </template>
         </l-choropleth-layer>
@@ -148,5 +148,9 @@ body {
 
 #map {
   background-color: rgb(0, 0, 0);
+}
+
+.info-control-wrapper {
+  background-color: blueviolet;
 }
 </style>
