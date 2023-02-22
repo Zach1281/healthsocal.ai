@@ -25,7 +25,7 @@
     <div v-if="selectedMap === 'map2'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -38,7 +38,7 @@
     <div v-if="selectedMap === 'map3'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -51,7 +51,7 @@
     <div v-if="selectedMap === 'map4'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="comValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="comValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -64,7 +64,7 @@
     <div v-if="selectedMap === 'map5'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="eduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="eduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
