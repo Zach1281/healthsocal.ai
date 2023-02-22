@@ -11,7 +11,7 @@
       <input type="radio" id="map5" value="map5" v-model="selectedMap" @change="updateMap">
       <label for="map5">Education</label>
       <div v-if="selectedMap === 'map1'" id="app">
-        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
           <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
@@ -23,7 +23,7 @@
       </div>
     <div>
       <div v-if="selectedMap === 'map2'">
-        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
@@ -36,7 +36,7 @@
     </div>
     <div>
       <div v-if="selectedMap === 'map3'">
-        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
@@ -49,7 +49,7 @@
     </div>
     <div>
       <div v-if="selectedMap === 'map4'">
-        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="comValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
@@ -62,7 +62,7 @@
     </div>
     <div>
       <div v-if="selectedMap === 'map5'">
-        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
+        <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="eduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
