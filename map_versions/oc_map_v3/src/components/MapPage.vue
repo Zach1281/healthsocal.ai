@@ -79,9 +79,9 @@
   <script>
   import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
   //import { geojson } from './data/py-departments-geojson'
-  import { sdohData } from '/Users/tiffanytran/GitHub/healthsocal.ai/map_versions/oc_map_v3/src/data/sdohData.js'
-  import ocGeojson from '/Users/tiffanytran/GitHub/healthsocal.ai/map_versions/oc_map_v3/src/data/ocGeoZipCode.json'
-  import { ocMHData } from '/Users/tiffanytran/GitHub/healthsocal.ai/map_versions/oc_map_v3/src/data/avg_data_zipcode.js'
+  import { sdohData } from '../data/sdohData'
+  import ocGeojson from '../data/ocGeoZipCode.json'
+  import { ocMHData } from '../data/averaged_data_zipcode'
   import {LMap, LTileLayer} from 'vue2-leaflet';
   export default {
     name: "app",

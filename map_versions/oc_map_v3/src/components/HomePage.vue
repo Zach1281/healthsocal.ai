@@ -405,7 +405,7 @@
     flex-direction: row;
     background-size: cover;
     justify-content: center;
-    background: url('/Users/tiffanytran/GitHub/healthsocal.ai/map_versions/oc_map_v3/src/assets/statistic.png') no-repeat center fixed;     
+    background: url('../assets/statistic.png') no-repeat center fixed;     
     background-size: cover;
   }
   .dashboard-solutions {
@@ -418,7 +418,7 @@
     flex-direction: row;
     background-size: cover;
     justify-content: center;
-    background-image: url("/Users/tiffanytran/GitHub/healthsocal.ai/map_versions/oc_map_v3/src/assets/solutions.png");
+    background-image: url("../assets/solutions.png");
   }
   .dashboard-container2 {
     display: flex;
