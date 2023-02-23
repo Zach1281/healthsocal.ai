@@ -28,7 +28,7 @@
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
               <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-              <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+              <l-reference-chart title="Average Percentage of Households not recieving Food Stamps by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
             </template>
           </l-choropleth-layer>
         </l-map>
@@ -41,7 +41,7 @@
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
               <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-              <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+              <l-reference-chart title="Average Percentage of Unemployment (Ages 16+) by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
             </template>
           </l-choropleth-layer>
         </l-map>
@@ -54,7 +54,7 @@
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="comValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
               <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-              <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+              <l-reference-chart title="Average Distance to the nearest Health Clinic by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
             </template>
           </l-choropleth-layer>
         </l-map>
@@ -67,7 +67,7 @@
           <l-choropleth-layer :data="sdohData" titleKey="ZIPCODE" idKey="ZCTA" :value="eduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
               <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
-              <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+              <l-reference-chart title="Average Percent of People (Ages 16-19) Unemployed and Not in School by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
             </template>
           </l-choropleth-layer>
         </l-map>
@@ -103,7 +103,7 @@
           colorScale: ["71ae46", "ebe12a", "ac2026"],
           foodValue: {
             key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC",
-            metric: "Food Stamps"
+            metric: "%"
           },
           ocValue: {
             key: "mhi_avg",
@@ -111,15 +111,15 @@
           },
           econValue:{
             key: "ACS_PCT_UNEMPLOY_ZC",
-            metric: "% Unemployed"
+            metric: "%"
           },
           comValue: {
             key: "POS_DIST_CLINIC_ZP",
-            metric: "Distance Nearest Health Clinic"
+            metric: "miles"
           },
           eduValue: {
-            key: "ACS_TOT_POP_WT_ZC",
-            metric: "% Teens and Adults Unemployed and Not in School"
+            key: "ACS_PCT_NO_WORK_NO_SCHL_16_19_ZC",
+            metric: "%"
           },
           mapOptions: {
             attributionControl: false
