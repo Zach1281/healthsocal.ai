@@ -25,7 +25,7 @@
     <div v-if="selectedMap === 'map2'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="foodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="weightedSDOHData" titleKey="zcta" idKey="zcta" :value="wfoodValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -38,7 +38,7 @@
     <div v-if="selectedMap === 'map3'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="econValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="weightedSDOHData" titleKey="zcta" idKey="zcta" :value="weconValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -51,7 +51,7 @@
     <div v-if="selectedMap === 'map4'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="comValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="weightedSDOHData" titleKey="zcta" idKey="zcta" :value="wcomValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -64,7 +64,7 @@
     <div v-if="selectedMap === 'map5'">
       <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 750px;" :options="mapOptions">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-choropleth-layer :data="sdohData" titleKey="ZCTA" idKey="ZCTA" :value="eduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
+        <l-choropleth-layer :data="weightedSDOHData" titleKey="zcta" idKey="zcta" :value="weduValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
           <template slot-scope="info">
             <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
             <l-reference-chart title="Social Determinants of Health by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
@@ -83,6 +83,7 @@ import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
 import { sdohData } from './data/sdohData'
 import ocGeojson from './data/ocGeoZipCode.json'
 import { ocMHData } from './data/avg_data_zipcode'
+import { weightedSDOHData } from './data/weighted_sdoh_data'
 import {LMap, LTileLayer} from 'vue2-leaflet';
 
 export default {
@@ -101,6 +102,7 @@ export default {
         ocMHData,
         ocGeojson,
         sdohData,
+        weightedSDOHData,
         selectedMap: 'map1',
         colorScale: ["71ae46", "ebe12a", "ac2026"],
         foodValue: {
@@ -122,6 +124,22 @@ export default {
         eduValue: {
           key: "ACS_TOT_POP_WT_ZC",
           metric: "% Teens and Adults Unemployed and Not in School"
+        },
+        wfoodValue: {
+          key: "w_no_food_stamps",
+          metric: "Food Stamps"
+        },
+        weconValue: {
+          key: "w_umemployed",
+          metric: "% Unemployed"
+        },
+        wcomValue: {
+          key: "w_distance_clinic",
+          metric: "Distance Nearest Clinic"
+        },
+        weduValue: {
+          key: "w_no_school_job",
+          metric: "Number Teens and Adults Unemployed and Not in School"
         },
         mapOptions: {
           attributionControl: false
