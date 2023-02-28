@@ -1,5 +1,6 @@
 <template>
     <div>
+      <!--Creates 5 maps that each represent a different metric, can add more as needed-->
       <input type="radio" id="map1" value="map1" v-model="selectedMap" @change="updateMap">
       <label for="map1">MHI</label>
       <input type="radio" id="map2" value="map2" v-model="selectedMap" @change="updateMap">
@@ -10,12 +11,27 @@
       <label for="map4">Community and Social Context Stability</label>
       <input type="radio" id="map5" value="map5" v-model="selectedMap" @change="updateMap">
       <label for="map5">Education</label>
+      <!--If new map is made, copy l-map and l-tile-layers, but other layers will be different depending on data file used-->
       <div v-if="selectedMap === 'map1'" id="app">
         <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+          <!--data links to csv/js data file, titleKey and idKey identify specific column of data
+              value links to specific data value/metric in the data file, geojsonIdKey identifies geojson file
+              for choropleth layer, geojson is file name itself-->
           <l-choropleth-layer :data="ocMHData" titleKey="zip" idKey="zip_code" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale">
             <template slot-scope="info">
+                <!--info control is the pop up box on the bottom left; item is the numerical data value of the
+                    current area that is being hovered over, unit is the metric of the data value, for example
+                    MHI map displays Mental Health Index, Economic Map is in percentages, etc.
+                    title is the light grey text that appears at the top indicating the title,
+                    placeholder is placeholder text that appears when not hovering over an area-->
                 <l-info-control :item="info.currentItem" :unit="info.unit" title="Zip Code" placeholder="Hover over a zip code"/>
+                <!--reference chart is the box at the top right of the page, showing the map's explanation and scale
+                    title is the description/title of the current map
+                    colorscale is the scale of colors, by default a green-yellow-red scale
+                    min and max can be copied as they are shown to have the program set
+                    default values for the min and max, which will be the min and max found in the
+                    data respectively-->
               <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
             </template>
           </l-choropleth-layer>
@@ -77,6 +93,8 @@
   </template>
   
   <script>
+  /* must import vue components, as well as any data and geojson files needed*/
+
   import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
   //import { geojson } from './data/py-departments-geojson'
   import { sdohData } from '../data/sdohData'
@@ -94,6 +112,8 @@
     },
     data() {
         return {
+          /* assign values to all variables that are used above in the map parts, if using OpenStreetMap,
+             copy the values for url and attribution to new map */
           url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
           ocMHData,
@@ -101,6 +121,9 @@
           sdohData,
           selectedMap: 'map1',
           colorScale: ["71ae46", "ebe12a", "ac2026"],
+          /* each map has its own value that they represent, if making a new map, create a new
+             variable as shown here and assign it a key (the data you want to display from the data file),
+             and a metric to represent the data in */
           foodValue: {
             key: "ACS_PCT_HH_NO_FD_STMP_BLW_POV_ZC",
             metric: "%"
@@ -121,8 +144,9 @@
             key: "ACS_PCT_NO_WORK_NO_SCHL_16_19_ZC",
             metric: "%"
           },
+          /* if using OpenStreetMap, leave as true to give credit */
           mapOptions: {
-            attributionControl: false
+            attributionControl: true
           },
           currentStrokeColor: '3d3213'
         }
