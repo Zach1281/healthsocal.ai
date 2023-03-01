@@ -24,7 +24,7 @@
           <!--data links to csv/js data file, titleKey and idKey identify specific column of data
               value links to specific data value/metric in the data file, geojsonIdKey identifies geojson file
               for choropleth layer, geojson is file name itself-->
-          <l-choropleth-layer :data="weighted_mhi_data" titleKey="zcta" idKey="zcta" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale" :@onClick="changeDisplay()">
+          <l-choropleth-layer :data="weighted_mhi_data" titleKey="zcta" idKey="zcta" :value="ocValue" geojsonIdKey="dpto" :geojson="ocGeojson" :colorScale="colorScale" :on-hover="changeDisplay">
             <template slot-scope="info">
                 <!--info control is the pop up box on the bottom left; item is the numerical data value of the
                     current area that is being hovered over, unit is the metric of the data value, for example
@@ -108,7 +108,7 @@
   import { ocMHData } from '../data/avg_data_zipcode'
   import { weighted_mhi_data } from '../data/weighted_mhi_data'
   import { weighted_sdoh_data } from '../data/weighted_sdoh_data'
-  import {LMap, LTileLayer, LControl} from 'vue2-leaflet';
+  import {LMap, LTileLayer} from 'vue2-leaflet';
   export default {
     name: "app",
     components: { 
@@ -131,7 +131,7 @@
           weighted_sdoh_data,
           weighted_mhi_data,
           selectedMap: 'map1',
-          colorScale: ["71ae46", "ebe12a", "ac2026"],
+          colorScale: ['#fee8c8','#fdbb84','#e34a33'],
           /* each map has its own value that they represent, if making a new map, create a new
              variable as shown here and assign it a key (the data you want to display from the data file),
              and a metric to represent the data in */
@@ -180,9 +180,7 @@
       
     },
     methods: {
-      changeDisplay(){
-        console.log('joe')
-      }
+       
     }
   }
   </script>

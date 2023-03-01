@@ -1,55 +1,164 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-cover">
+    <header data-role="Header" class="dashboard-header">
+      <div data-thq="thq-dropdown" class="dashboard-thq-dropdown list-item">
+        <div data-thq="thq-dropdown-toggle" class="dashboard-dropdown-toggle">
+          <span class="dashboard-text">Menu</span>
+          <div
+            data-thq="thq-dropdown-arrow"
+            class="dashboard-dropdown-arrow"
+          ></div>
+        </div>
+        <ul data-thq="thq-dropdown-list" class="dashboard-dropdown-list">
+          <li data-thq="thq-dropdown" class="dashboard-dropdown list-item">
+            <router-link to="/dashboard">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="dashboard-dropdown-toggle1"
+              >
+                <span class="dashboard-text01">Home</span>
+              </div>
+            </router-link>
+          </li>
+          <li data-thq="thq-dropdown" class="dashboard-dropdown1 list-item">
+            <router-link to="/map">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="dashboard-dropdown-toggle2"
+              >
+                <span class="dashboard-text02">Map</span>
+              </div>
+            </router-link>
+          </li>
+        </ul>
+      </div>
       <div class="dashboard-container1">
-        <h1 class="dashboard-text04">healthsocal.ai</h1>
-        <span class="dashboard-text05" style="text-align: left; padding-left: 50px;">
+        <router-link to="/dashboard" class="dashboard-home">Home</router-link>
+        <router-link to="/map" class="dashboard-map">Map</router-link>
+        <span class="dashboard-about-us">About US</span>
+      </div>
+      <img
+        alt="logo"
+        src="/playground_assets/1213213213-200w.png"
+        class="dashboard-image"
+      />
+    </header>
+    <div class="dashboard-intro">
+      <div class="dashboard-container2">
+        <h1 class="dashboard-text03">healthsocal.ai</h1>
+        <span class="dashboard-text04">
           <span>
-            Southern California&apos;s mental health epidemic needs to be addressed to:
-            <span v-html="rawe3pu"></span>
+            Southern California&apos;s mental health epidemic needs to be
+            addressed to:
+            <span v-html="rawtkja"></span>
           </span>
           <br />
           <span>
-             - provide care to the ever-growing population and increasing number of mental illnesses
-            <span v-html="rawgjxz"></span>
+            - provide care to the ever-growing population and increasing number of
+            mental illnesses
+            <span v-html="rawcjua"></span>
           </span>
           <br />
           <span>
-             - support the mental health industry in providing those who can make health decisions with health data and solutions
-            <span v-html="raw0ji9"></span>
+            - give required support to the mental health industry in providing
+            those who can make health decisions with health data and solutions.
+            <span v-html="rawn4qb"></span>
           </span>
-          <span><span v-html="rawv24r"></span></span>
-          <span><span v-html="rawwws1"></span></span>
+          <span><span v-html="rawm76f"></span></span>
+          <span><span v-html="raw6j21"></span></span>
         </span>
+        <div class="dashboard-btn-group">
+          <router-link to="/map" class="dashboard-navlink2 button">
+            Get Started
+          </router-link>
+          <button class="dashboard-button button">Learn More</button>
+        </div>
       </div>
       <img
         alt="image"
-        style="padding-right: 50px;"
-        src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxtaW5pbWFsaXNtJTIwZ3JlZW58ZW58MHx8fHwxNjI1ODQxMDcw&amp;ixlib=rb-1.2.1&amp;h=1200"
+        src="/playground_assets/111-1500h.jpeg"
         class="dashboard-image1"
       />
     </div>
-    <div class="dashboard-statistic"></div>
+    <div class="dashboard-cover1in5">
+      <img
+        alt="image"
+        src="../assets/statistic.png"
+        class="dashboard-image2"
+      />
+    </div>
     <div class="dashboard-solutions">
-      <div class="dashboard-container2">
-        <h1 class="dashboard-text13">Solutions</h1>
-        <div class="dashboard-container3">
+      <div class="dashboard-container3">
+        <h1 class="dashboard-text12">Solutions</h1>
+        <div class="dashboard-container4">
           <div class="dashboard-container-interactivity">
-            <span class="dashboard-text14">Interactivity</span>
-            <span class="dashboard-text15">
-              <span class="dashboard-text16">
-                Interactive maps and user-friendly interfaces can be used to help users understand mental health.
+            <img
+              alt="image"
+              src="/playground_assets/interactions-1500h.png"
+              class="dashboard-image3"
+            />
+            <span class="dashboard-text13">Interactivity</span>
+            <span class="dashboard-text14">
+              <span class="dashboard-text15">
+                Interactive maps and user-friendly interfaces can be used to help
+                users understand mental health.
               </span>
               <br />
             </span>
           </div>
           <div class="dashboard-container-data">
-            <span class="dashboard-text18">Data</span>
-            <span class="dashboard-text19">
-              <span class="dashboard-text20">
-                Provide data to help users analyze the main causes of psychological problems in different regions.
+            <img
+              alt="image"
+              src="/playground_assets/analysis-1500h.png"
+              class="dashboard-image4"
+            />
+            <span class="dashboard-text17">Data</span>
+            <span class="dashboard-text18">
+              <span class="dashboard-text19">
+                Provide data to help users analyze the main causes of
+                psychological problems in different regions.
               </span>
-              <br class="dashboard-text21" />
+              <br class="dashboard-text20" />
+              <br />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-product">
+      <div class="dashboard-container5">
+        <h1 class="dashboard-text22">
+          <span class="dashboard-text23">Product</span>
+          <br />
+        </h1>
+        <div class="dashboard-container6">
+          <div class="dashboard-container1">
+            <img
+              alt="image"
+              src="/playground_assets/analysis%20%5B1%5D-1500h.png"
+              class="dashboard-image5"
+            />
+            <span class="dashboard-text25">Overview</span>
+            <span class="dashboard-text26">
+              <span class="dashboard-text27">
+                Data-driven decision making platform, utilizing data-visualization
+                and AI interventions.
+              </span>
+              <br />
+            </span>
+          </div>
+          <div class="dashboard-container2">
+            <img
+              alt="image"
+              src="/playground_assets/goal-1500h.png"
+              class="dashboard-image6"
+            />
+            <span class="dashboard-text29">Goal</span>
+            <span class="dashboard-text30">
+              <span>
+                Develop map into a fully fledged product for users to gain an
+                understanding of location-based mental health issues
+              </span>
               <br />
             </span>
           </div>
@@ -57,8 +166,12 @@
       </div>
     </div>
     <footer class="dashboard-footer">
-      <img alt="logo" class=".dashboard-image2" src="../assets/socalenhance.png"/>
-      <span class="dashboard-text23">© 2023 Octane OC, All Rights Reserved.</span>
+      <img
+        alt="logo"
+        src="../assets/statistic.png"
+        class="dashboard-image7"
+      />
+      <span class="dashboard-text33">© 2023 Octane OC, All Rights Reserved.</span>
       <div class="dashboard-icon-group">
         <a
           href="https://twitter.com/octaneoc?lang=en"
@@ -100,11 +213,11 @@ export default {
   props: {},
   data() {
     return {
-      rawe3pu: ' ',
-      rawgjxz: ' ',
-      raw0ji9: ' ',
-      rawv24r: ' ',
-      rawwws1: ' ',
+      rawtkja: ' ',
+      rawcjua: ' ',
+      rawn4qb: ' ',
+      rawm76f: ' ',
+      raw6j21: ' ',
     }
   },
 }
@@ -119,7 +232,159 @@ export default {
   align-items: center;
   flex-direction: column;
 }
-.dashboard-cover {
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: 3px;
+  justify-content: space-between;
+  background-color: rgba(255, 192, 3, 0.8);
+}
+.dashboard-thq-dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.dashboard-dropdown-toggle {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius2);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.dashboard-text {
+  color: rgba(255, 125, 0, 0.8);
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.dashboard-dropdown-arrow {
+  transition: 0.3s;
+}
+.dashboard-dropdown-list {
+  left: 0%;
+  width: max-content;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  min-width: 100%;
+  transition: 0.3s;
+  align-items: stretch;
+  border-color: #D9D9D9;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+  list-style-type: none;
+  background-color: var(--dl-color-gray-white);
+  list-style-position: inside;
+}
+.dashboard-dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.dashboard-dropdown-toggle1 {
+  fill: #595959;
+  color: rgba(255, 125, 0, 0.8);
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.dashboard-dropdown-toggle1:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.dashboard-text01 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.dashboard-dropdown1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.dashboard-dropdown-toggle2 {
+  fill: #595959;
+  color: rgba(255, 125, 0, 0.8);
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.dashboard-dropdown-toggle2:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.dashboard-text02 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.dashboard-container1 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-home {
+  color: rgba(255, 125, 0, 0.8);
+  font-weight: 700;
+  text-decoration: none;
+}
+.dashboard-map {
+  color: rgba(255, 125, 0, 0.8);
+  font-weight: 700;
+  text-decoration: none;
+}
+.dashboard-about-us {
+  color: rgba(255, 125, 0, 0.8);
+  font-weight: 700;
+}
+.dashboard-image {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+.dashboard-intro {
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-threeunits);
@@ -129,53 +394,87 @@ export default {
   flex-direction: row;
   justify-content: space-between;
 }
-.dashboard-container1 {
+.dashboard-container2 {
   display: flex;
   margin-right: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
 }
-.dashboard-text04 {
+.dashboard-text03 {
   color: rgba(255, 125, 0, 0.8);
   font-size: 3rem;
-  max-width: 600px;
-  text-align: left;
-  padding-left: 50px;
+  max-width: 450px;
   font-family: Poppins;
 }
-.dashboard-text05 {
+.dashboard-text04 {
   margin-top: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);
+}
+.dashboard-btn-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-navlink2 {
+  color: var(--dl-color-gray-black);
+  transition: 0.3s;
+  font-weight: 700;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgba(255, 192, 3, 0.8);
+}
+.dashboard-navlink2:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-black);
+}
+.dashboard-button {
+  transition: 0.3s;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  border-color: transparent;
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+}
+.dashboard-button:hover {
+  border-color: var(--dl-color-gray-black);
 }
 .dashboard-image1 {
   width: 400px;
   object-fit: cover;
 }
-.dashboard-statistic {
+.dashboard-cover1in5 {
   width: 100%;
   display: flex;
+  padding: 0px;
   max-width: var(--dl-size-size-maxwidth);
   align-self: center;
-  min-height: 130vh;
+  min-height: 80vh;
   align-items: center;
   flex-direction: row;
-  background-size: cover;
   justify-content: center;
-  background-image: url('../assets/statistic.png');    
+}
+.dashboard-image2 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .dashboard-solutions {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-threeunits);
+  padding: 0px;
   max-width: var(--dl-size-size-maxwidth);
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   flex-direction: row;
-  background-size: cover;
   justify-content: center;
-  background-image: url("../assets/solutions.png");
+  background-color: rgba(255, 125, 0, 0.8);
 }
-.dashboard-container2 {
+.dashboard-container3 {
   display: flex;
   align-self: center;
   margin-left: var(--dl-space-space-threeunits);
@@ -184,15 +483,14 @@ export default {
   padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
 }
-.dashboard-text13 {
-  color: rgba(255, 125, 0, 0.8);
+.dashboard-text12 {
+  color: rgba(0, 0, 0, 0.8);
   font-size: 3rem;
   max-width: 450px;
   align-self: flex-start;
   font-family: Poppins;
-  padding-left: 50px;
 }
-.dashboard-container3 {
+.dashboard-container4 {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   align-self: flex-start;
@@ -200,46 +498,52 @@ export default {
 }
 .dashboard-container-interactivity {
   display: flex;
+  padding: var(--dl-space-space-unit);
   align-items: center;
-  padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(255,141,0,255);
+  background-color: rgba(255,223,124,255);
 }
-.dashboard-text14 {
-  color: rgba(255, 255, 255, 0.8);
+.dashboard-image3 {
+  width: 100px;
+  object-fit: cover;
+}
+.dashboard-text13 {
+  color: rgba(0, 0, 0, 0.8);
   font-size: 36px;
   align-self: center;
+  margin-top: var(--dl-space-space-twounits);
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.dashboard-text14 {
+  color: rgba(255, 125, 0, 0.8);
+  font-size: 24px;
   margin-top: var(--dl-space-space-twounits);
   font-family: Poppins;
   font-weight: 700;
   margin-bottom: var(--dl-space-space-twounits);
 }
 .dashboard-text15 {
-  color: rgba(255, 125, 0, 0.8);
-  font-size: 24px;
-  margin-top: var(--dl-space-space-twounits);
-  font-family: Poppins;
-  font-weight: 700;
-  margin-bottom: var(--dl-space-space-twounits);
-}
-.dashboard-text16 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(14, 13, 13, 0.8);
 }
 .dashboard-container-data {
   display: flex;
+  padding: var(--dl-space-space-unit);
   align-self: center;
   align-items: center;
-  padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255,223,124,255);
 }
-.dashboard-text18 {
+.dashboard-image4 {
+  width: 100px;
+  object-fit: cover;
+}
+.dashboard-text17 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 36px;
   margin-top: var(--dl-space-space-twounits);
@@ -247,7 +551,7 @@ export default {
   font-weight: 700;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.dashboard-text19 {
+.dashboard-text18 {
   color: rgba(255, 125, 0, 0.8);
   font-size: 24px;
   margin-top: var(--dl-space-space-twounits);
@@ -255,11 +559,112 @@ export default {
   font-weight: 700;
   margin-bottom: var(--dl-space-space-twounits);
 }
+.dashboard-text19 {
+  color: rgba(0, 0, 0, 0.8);
+}
 .dashboard-text20 {
   color: rgba(0, 0, 0, 0.8);
 }
-.dashboard-text21 {
+.dashboard-product {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255,223,124,255);
+}
+.dashboard-container5 {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-left: var(--dl-space-space-threeunits);
+  margin-right: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.dashboard-text22 {
   color: rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+  max-width: 450px;
+  align-self: flex-start;
+  font-family: Poppins;
+}
+.dashboard-container6 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.dashboard-container1 {
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 125, 0, 0.8);
+}
+.dashboard-image5 {
+  width: 100px;
+  object-fit: cover;
+}
+.dashboard-text25 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.dashboard-text26 {
+  color: rgba(255, 125, 0, 0.8);
+  font-size: 24px;
+  margin-top: var(--dl-space-space-twounits);
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.dashboard-text27 {
+  color: rgba(0, 0, 0, 0.8);
+}
+.dashboard-container2 {
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 125, 0, 0.8);
+}
+.dashboard-image6 {
+  width: 100px;
+  object-fit: cover;
+}
+.dashboard-text29 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+  margin-top: var(--dl-space-space-twounits);
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.dashboard-text30 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  margin-top: var(--dl-space-space-twounits);
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-twounits);
 }
 .dashboard-footer {
   width: 100%;
@@ -275,7 +680,7 @@ export default {
   justify-content: space-between;
   background-color: rgba(255, 192, 3, 0.8);
 }
-.dashboard-image2 {
+.dashboard-image7 {
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
 }
@@ -308,25 +713,7 @@ export default {
   height: var(--dl-size-size-xsmall);
 }
 @media(max-width: 991px) {
-  .dashboard-cover {
-    flex-direction: column;
-  }
-  .dashboard-container1 {
-    align-items: center;
-    margin-right: 0px;
-    margin-bottom: var(--dl-space-space-twounits);
-    padding-right: 0px;
-  }
-  .dashboard-text04 {
-    text-align: center;
-  }
-  .dashboard-text05 {
-    text-align: left;
-  }
-  .dashboard-statistic {
-    flex-direction: column;
-  }
-  .dashboard-solutions {
+  .dashboard-intro {
     flex-direction: column;
   }
   .dashboard-container2 {
@@ -335,15 +722,40 @@ export default {
     margin-bottom: var(--dl-space-space-twounits);
     padding-right: 0px;
   }
+  .dashboard-text03 {
+    text-align: center;
+  }
+  .dashboard-text04 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .dashboard-cover1in5 {
+    flex-direction: column;
+  }
+  .dashboard-solutions {
+    flex-direction: column;
+  }
+  .dashboard-container3 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .dashboard-text12 {
+    text-align: center;
+  }
   .dashboard-text13 {
     text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
   }
   .dashboard-text14 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
-  .dashboard-text15 {
+  .dashboard-text17 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
@@ -353,37 +765,78 @@ export default {
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
-  .dashboard-text19 {
+  .dashboard-product {
+    flex-direction: column;
+  }
+  .dashboard-container5 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .dashboard-text22 {
+    text-align: center;
+  }
+  .dashboard-text23 {
+    text-align: center;
+  }
+  .dashboard-text25 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .dashboard-text26 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .dashboard-text29 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .dashboard-text30 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
 }
 @media(max-width: 767px) {
-  .dashboard-cover {
+  .dashboard-header {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .dashboard-text05 {
+  .dashboard-intro {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .dashboard-text04 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
   .dashboard-image1 {
     width: 80%;
   }
-  .dashboard-statistic {
+  .dashboard-cover1in5 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+  }
+  .dashboard-image2 {
+    width: 80%;
   }
   .dashboard-solutions {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+  .dashboard-text13 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
   .dashboard-text14 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .dashboard-text15 {
+  .dashboard-text17 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -391,7 +844,23 @@ export default {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .dashboard-text19 {
+  .dashboard-product {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .dashboard-text25 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .dashboard-text26 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .dashboard-text29 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .dashboard-text30 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -399,23 +868,33 @@ export default {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .dashboard-text23 {
+  .dashboard-text33 {
     text-align: center;
     margin-left: var(--dl-space-space-unit);
     margin-right: var(--dl-space-space-unit);
   }
 }
 @media(max-width: 479px) {
-  .dashboard-cover {
+  .dashboard-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .dashboard-intro {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .dashboard-container1 {
+  .dashboard-container2 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .dashboard-statistic {
+  .dashboard-btn-group {
+    flex-direction: column;
+  }
+  .dashboard-button {
+    margin-top: var(--dl-space-space-unit);
+    margin-left: 0px;
+  }
+  .dashboard-cover1in5 {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -427,7 +906,18 @@ export default {
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .dashboard-container2 {
+  .dashboard-container3 {
+    margin-right: var(--dl-space-space-threeunits);
+    margin-bottom: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .dashboard-product {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .dashboard-container5 {
     margin-right: var(--dl-space-space-threeunits);
     margin-bottom: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-threeunits);
@@ -437,10 +927,10 @@ export default {
     padding: var(--dl-space-space-unit);
     flex-direction: column;
   }
-  .dashboard-text23 {
+  .dashboard-text33 {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
 }
-</style>
+</style>   
