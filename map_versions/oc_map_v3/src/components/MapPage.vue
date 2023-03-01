@@ -1,16 +1,22 @@
 <template>
     <div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--Creates 5 maps that each represent a different metric, can add more as needed-->
       <input type="radio" id="map1" value="map1" v-model="selectedMap" @change="updateMap">
-      <label for="map1">MHI</label>
+      <i class="fa fa-gears"></i>
+      <label for="map1">  MHI     </label>
       <input type="radio" id="map2" value="map2" v-model="selectedMap" @change="updateMap">
-      <label for="map2">Food</label>
-      <input type="radio" id="map3" value="map3" v-model="selectedMap" @change="updateMap">
-      <label for="map3">Economic Stability</label>
+      <i class="fa fa-cutlery"></i>
+      <label for="map2">  Food      </label>
+      <input type="radio" id="map3" value="map3" v-model="selectedMap" @change="updateMap" icon="dollar">
+      <i class="fa fa-dollar"></i>
+      <label for="map3">  Economic Stability      </label>
       <input type="radio" id="map4" value="map4" v-model="selectedMap" @change="updateMap">
-      <label for="map4">Community and Social Context Stability</label>
+      <i class="fa fa-group"></i>
+      <label for="map4">  Community and Social Context Stability      </label>
       <input type="radio" id="map5" value="map5" v-model="selectedMap" @change="updateMap">
-      <label for="map5">Education</label>
+      <i class="fa fa-pencil"></i>
+      <label for="map5">  Education</label>
       <!--If new map is made, copy l-map and l-tile-layers, but other layers will be different depending on data file used-->
       <div v-if="selectedMap === 'map1'" id="app">
         <l-map :center="[33.7175, -117.8311]" :zoom="10" style="height: 700px;" :options="mapOptions">
@@ -119,6 +125,7 @@
           url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
           ocMHData,
+          dollar: 'C:\Users\erick\Documents\GitHub\healthsocal.ai\map_versions\oc_map_v3\src\assets\logo.png',
           ocGeojson,
           sdohData,
           weighted_sdoh_data,
