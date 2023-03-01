@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/map">Map</router-link>
     </nav>
     <router-view/>
   </div>
@@ -18,7 +18,8 @@
 }
 
 nav {
-  padding: 5px;
+  padding: 10px;
+  background-color: rgba(255, 192, 3, 0.8);
 }
 
 nav a {
