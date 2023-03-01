@@ -57,7 +57,7 @@
       </div>
     </div>
     <footer class="dashboard-footer">
-      <img alt="logo" class=".dashboard-image2" src="map_versions/oc_map_v3/src/assets/socalenhance.png"/>
+      <img alt="logo" class=".dashboard-image2" src="../assets/socalenhance.png"/>
       <span class="dashboard-text23">© 2023 Octane OC, All Rights Reserved.</span>
       <div class="dashboard-icon-group">
         <a
