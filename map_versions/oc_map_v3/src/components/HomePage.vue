@@ -57,7 +57,7 @@
       </div>
     </div>
     <footer class="dashboard-footer">
-      <img alt="logo" src="map_versions/oc_map_v3/src/assets/socalenhance.png"/>
+      <img alt="logo" class=".dashboard-image2" src="map_versions/oc_map_v3/src/assets/socalenhance.png"/>
       <span class="dashboard-text23">© 2023 Octane OC, All Rights Reserved.</span>
       <div class="dashboard-icon-group">
         <a
@@ -146,10 +146,6 @@ export default {
 .dashboard-text05 {
   margin-top: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);
-}
-.dashboard-navlink:hover {
-  color: var(--dl-color-gray-white);
-  background-color: var(--dl-color-gray-black);
 }
 .dashboard-image1 {
   width: 400px;
@@ -364,10 +360,6 @@ export default {
   }
 }
 @media(max-width: 767px) {
-  .dashboard-header {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
   .dashboard-cover {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -414,9 +406,6 @@ export default {
   }
 }
 @media(max-width: 479px) {
-  .dashboard-header {
-    padding: var(--dl-space-space-unit);
-  }
   .dashboard-cover {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
@@ -425,13 +414,6 @@ export default {
   }
   .dashboard-container1 {
     margin-bottom: var(--dl-space-space-unit);
-  }
-  .dashboard-btn-group {
-    flex-direction: column;
-  }
-  .dashboard-button {
-    margin-top: var(--dl-space-space-unit);
-    margin-left: 0px;
   }
   .dashboard-statistic {
     padding-top: var(--dl-space-space-twounits);
