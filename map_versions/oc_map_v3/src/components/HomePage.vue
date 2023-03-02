@@ -30,34 +30,51 @@
       />
     </div>
     <div class="dashboard-statistic"></div>
-    <div class="dashboard-solutions">
+    <div class="dashboard-solutions" style="background-color: rgba(255,141,0,255); min-height: 80vh;">
       <div class="dashboard-container2">
-        <h1 class="dashboard-text13">Solutions</h1>
+        <h1 class="dashboard-text18">Solutions</h1><br />
         <div class="dashboard-container3">
-          <div class="dashboard-container-interactivity">
-            <span class="dashboard-text14">Interactivity</span>
-            <span class="dashboard-text15">
-              <span class="dashboard-text16">
+          <div class="dashboard-container-data" style="background-color: rgba(255, 192, 3, 0.8);"><br />
+            <span class="dashboard-text18">Interactivity</span>
+              <span class="dashboard-text20">
                 Interactive maps and user-friendly interfaces can be used to help users understand mental health.
               </span>
               <br />
-            </span>
           </div>
-          <div class="dashboard-container-data">
+          <div class="dashboard-container-data"><span style="background-color: rgba(255,141,0,255);">|</span></div>
+          <div class="dashboard-container-data"><span><br /></span><br /></div>
+          <div class="dashboard-container-data" style="background-color: rgba(255, 192, 3, 0.8);"><br />
             <span class="dashboard-text18">Data</span>
-            <span class="dashboard-text19">
               <span class="dashboard-text20">
                 Provide data to help users analyze the main causes of psychological problems in different regions.
               </span>
-              <br class="dashboard-text21" />
-              <br />
-            </span>
+            <br />
           </div>
         </div>
       </div>
     </div>
+    <div class="dashboard-solutions" style="background-color: rgba(255, 192, 3, 0.8); min-height: 80vh;">
+  <div class="dashboard-container2">
+    <h1 class="dashboard-text18">Product</h1><br />
+    <div class="dashboard-container3">
+      <div class="dashboard-container-data" style="background-color: rgba(255,141,0,255);"><br />
+        <span class="dashboard-text18">Overview</span>
+          <span class="dashboard-text20">
+            Data-driven decision making platform, utilizing data-visualization and AI interventions.
+          </span><br />
+        </div>
+      <div class="dashboard-container-data"><span style="background-color: rgba(255, 192, 3, 0.8);">|</span></div>
+      <div class="dashboard-container-data" style="background-color: rgba(255,141,0,255);"><br />
+        <span class="dashboard-text18">Goal</span>
+          <span class="dashboard-text20">
+            Develop map into a fully fledged product for users to gain an understanding of location-based mental health issues
+          </span><br />
+      </div>
+    </div>
+  </div>
+</div>
     <footer class="dashboard-footer">
-      <img alt="logo" class=".dashboard-image2" src="../assets/socalenhance.png"/>
+      <img alt="logo" style="width: 75px; height: 75px; padding-left: 10px;" src="../assets/socalenhance.png"/>
       <span class="dashboard-text23">© 2023 Octane OC, All Rights Reserved.</span>
       <div class="dashboard-icon-group">
         <a
@@ -115,7 +132,7 @@ export default {
   width: 100%;
   display: flex;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   flex-direction: column;
 }
@@ -173,7 +190,6 @@ export default {
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url("../assets/solutions.png");
 }
 .dashboard-container2 {
   display: flex;
@@ -232,9 +248,6 @@ export default {
   display: flex;
   align-self: center;
   align-items: center;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255,223,124,255);
@@ -273,11 +286,7 @@ export default {
   flex-direction: row;
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
-  background-color: rgba(255, 192, 3, 0.8);
-}
-.dashboard-image2 {
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
+  background-color: rgba(255,223,124,255);
 }
 .dashboard-icon-group {
   display: flex;
