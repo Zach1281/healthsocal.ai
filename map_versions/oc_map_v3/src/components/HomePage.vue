@@ -24,26 +24,25 @@
       </div>
       <img
         alt="image"
-        style="padding-right: 50px;"
+        style="border-radius: 25px; padding-right: 50px;"
         src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxtaW5pbWFsaXNtJTIwZ3JlZW58ZW58MHx8fHwxNjI1ODQxMDcw&amp;ixlib=rb-1.2.1&amp;h=1200"
         class="dashboard-image1"
       />
     </div>
     <div class="dashboard-statistic"></div>
     <div class="dashboard-solutions" style="background-color: rgba(255,141,0,255); min-height: 80vh;">
-      <div class="dashboard-container2">
+      <div class="dashboard-container2" style="border-radius: 75px;">
         <h1 class="dashboard-text18">Solutions</h1><br />
         <div class="dashboard-container3">
-          <div class="dashboard-container-data" style="background-color: rgba(255, 192, 3, 0.8);"><br />
+          <div class="dashboard-container-data" style="border-radius: 25px; background-color: rgba(255, 192, 3, 0.8);"><br />
             <span class="dashboard-text18">Interactivity</span>
               <span class="dashboard-text20">
                 Interactive maps and user-friendly interfaces can be used to help users understand mental health.
               </span>
               <br />
           </div>
-          <div class="dashboard-container-data"><span style="background-color: rgba(255,141,0,255);">|</span></div>
           <div class="dashboard-container-data"><span><br /></span><br /></div>
-          <div class="dashboard-container-data" style="background-color: rgba(255, 192, 3, 0.8);"><br />
+          <div class="dashboard-container-data" style="border-radius: 25px; background-color: rgba(255, 192, 3, 0.8);"><br />
             <span class="dashboard-text18">Data</span>
               <span class="dashboard-text20">
                 Provide data to help users analyze the main causes of psychological problems in different regions.
@@ -57,14 +56,13 @@
   <div class="dashboard-container2">
     <h1 class="dashboard-text18">Product</h1><br />
     <div class="dashboard-container3">
-      <div class="dashboard-container-data" style="background-color: rgba(255,141,0,255);"><br />
+      <div class="dashboard-container-data" style="border-radius: 25px; background-color: rgba(255,141,0,255);"><br />
         <span class="dashboard-text18">Overview</span>
           <span class="dashboard-text20">
             Data-driven decision making platform, utilizing data-visualization and AI interventions.
           </span><br />
         </div>
-      <div class="dashboard-container-data"><span style="background-color: rgba(255, 192, 3, 0.8);">|</span></div>
-      <div class="dashboard-container-data" style="background-color: rgba(255,141,0,255);"><br />
+      <div class="dashboard-container-data" style="border-radius: 25px; background-color: rgba(255,141,0,255);"><br />
         <span class="dashboard-text18">Goal</span>
           <span class="dashboard-text20">
             Develop map into a fully fledged product for users to gain an understanding of location-based mental health issues
@@ -209,7 +207,7 @@ export default {
   padding-left: 50px;
 }
 .dashboard-container3 {
-  gap: var(--dl-space-space-threeunits);
+  gap: 5px;
   display: flex;
   align-self: flex-start;
   flex-direction: row;
