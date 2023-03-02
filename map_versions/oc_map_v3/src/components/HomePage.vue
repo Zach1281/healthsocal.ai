@@ -92,6 +92,7 @@
                 Interactive maps and user-friendly interfaces can be used to help users understand mental health.
               </span>
               <br />
+            </span>
           </div>
           <div class="dashboard-container-data">
             <span class="dashboard-text18">Data</span>
