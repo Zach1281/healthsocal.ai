@@ -1,6 +1,7 @@
-export var weighted_sdoh_data = [
+export var weighted_sdoh_data_city = [
  {
-  zcta:"90620",
+  zcta:90620,
+  City:"Buena Park",
   w_umemployed:6.4517764446,
   w_no_vehicle:4.1892756552,
   w_no_school_job:3.6491948216,
@@ -9,7 +10,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.9478257026
  },
  {
-  zcta:"90620",
+  zcta:90620,
+  City:"Buena Park",
   w_umemployed:6.4517764446,
   w_no_vehicle:4.1892756552,
   w_no_school_job:3.6491948216,
@@ -18,7 +20,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.9478257026
  },
  {
-  zcta:"90621",
+  zcta:90621,
+  City:"Buena Park",
   w_umemployed:5.2270969372,
   w_no_vehicle:5.7083928008,
   w_no_school_job:0.0,
@@ -27,7 +30,8 @@ export var weighted_sdoh_data = [
   w_uninsured:11.0698048626
  },
  {
-  zcta:"90621",
+  zcta:90621,
+  City:"Buena Park",
   w_umemployed:5.2270969372,
   w_no_vehicle:5.7083928008,
   w_no_school_job:0.0,
@@ -36,7 +40,8 @@ export var weighted_sdoh_data = [
   w_uninsured:11.0698048626
  },
  {
-  zcta:"90623",
+  zcta:90623,
+  City:"La Palma",
   w_umemployed:1.3369447427,
   w_no_vehicle:3.1030931481,
   w_no_school_job:0.0,
@@ -45,7 +50,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.8500157878
  },
  {
-  zcta:"90630",
+  zcta:90630,
+  City:"Cypress",
   w_umemployed:6.4080700979,
   w_no_vehicle:4.9892516577,
   w_no_school_job:0.5768822229,
@@ -54,7 +60,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.9983940638
  },
  {
-  zcta:"90631",
+  zcta:90631,
+  City:"La Habra",
   w_umemployed:13.5238408589,
   w_no_vehicle:11.6352788128,
   w_no_school_job:2.7568664351,
@@ -63,7 +70,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.0607312914
  },
  {
-  zcta:"90631",
+  zcta:90631,
+  City:"La Habra",
   w_umemployed:13.5238408589,
   w_no_vehicle:11.6352788128,
   w_no_school_job:2.7568664351,
@@ -72,7 +80,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.0607312914
  },
  {
-  zcta:"90631",
+  zcta:90631,
+  City:"La Habra",
   w_umemployed:13.5238408589,
   w_no_vehicle:11.6352788128,
   w_no_school_job:2.7568664351,
@@ -81,115 +90,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.0607312914
  },
  {
-  zcta:"90638",
-  w_umemployed:8.8273116514,
-  w_no_vehicle:7.3663454373,
-  w_no_school_job:0.4767363435,
-  w_no_food_stamps:7.889217556,
-  distance_clinic:2.96,
-  w_uninsured:5.9668935901
- },
- {
-  zcta:"90638",
-  w_umemployed:8.8273116514,
-  w_no_vehicle:7.3663454373,
-  w_no_school_job:0.4767363435,
-  w_no_food_stamps:7.889217556,
-  distance_clinic:3.59,
-  w_uninsured:5.9668935901
- },
- {
-  zcta:"90638",
-  w_umemployed:8.8273116514,
-  w_no_vehicle:7.3663454373,
-  w_no_school_job:0.4767363435,
-  w_no_food_stamps:7.889217556,
-  distance_clinic:3.88,
-  w_uninsured:5.9668935901
- },
- {
-  zcta:"90640",
-  w_umemployed:14.4923555415,
-  w_no_vehicle:14.1747148721,
-  w_no_school_job:3.7124253237,
-  w_no_food_stamps:18.6018317019,
-  distance_clinic:0.73,
-  w_uninsured:18.4231588254
- },
- {
-  zcta:"90650",
-  w_umemployed:18.3172781812,
-  w_no_vehicle:16.5350565204,
-  w_no_school_job:5.2476526681,
-  w_no_food_stamps:20.8585942532,
-  distance_clinic:0.89,
-  w_uninsured:30.1327477108
- },
- {
-  zcta:"90650",
-  w_umemployed:18.3172781812,
-  w_no_vehicle:16.5350565204,
-  w_no_school_job:5.2476526681,
-  w_no_food_stamps:20.8585942532,
-  distance_clinic:0.5,
-  w_uninsured:30.1327477108
- },
- {
-  zcta:"90650",
-  w_umemployed:18.3172781812,
-  w_no_vehicle:16.5350565204,
-  w_no_school_job:5.2476526681,
-  w_no_food_stamps:20.8585942532,
-  distance_clinic:0.73,
-  w_uninsured:30.1327477108
- },
- {
-  zcta:"90660",
-  w_umemployed:7.7368942217,
-  w_no_vehicle:13.934304389,
-  w_no_school_job:5.3881941901,
-  w_no_food_stamps:15.2961556678,
-  distance_clinic:0.23,
-  w_uninsured:17.2106422482
- },
- {
-  zcta:"90660",
-  w_umemployed:7.7368942217,
-  w_no_vehicle:13.934304389,
-  w_no_school_job:5.3881941901,
-  w_no_food_stamps:15.2961556678,
-  distance_clinic:2.65,
-  w_uninsured:17.2106422482
- },
- {
-  zcta:"90660",
-  w_umemployed:7.7368942217,
-  w_no_vehicle:13.934304389,
-  w_no_school_job:5.3881941901,
-  w_no_food_stamps:15.2961556678,
-  distance_clinic:1.53,
-  w_uninsured:17.2106422482
- },
- {
-  zcta:"90670",
-  w_umemployed:1.704733186,
-  w_no_vehicle:3.6011840859,
-  w_no_school_job:1.1088538049,
-  w_no_food_stamps:5.3370066309,
-  distance_clinic:2.0,
-  w_uninsured:2.8239501105
- },
- {
-  zcta:"90670",
-  w_umemployed:1.704733186,
-  w_no_vehicle:3.6011840859,
-  w_no_school_job:1.1088538049,
-  w_no_food_stamps:5.3370066309,
-  distance_clinic:2.24,
-  w_uninsured:2.8239501105
- },
- {
-  zcta:"90680",
+  zcta:90680,
+  City:"Stanton",
   w_umemployed:7.266444269,
   w_no_vehicle:6.8481616672,
   w_no_school_job:1.5758553836,
@@ -198,133 +100,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.9473694348
  },
  {
-  zcta:"90701",
-  w_umemployed:3.2979160088,
-  w_no_vehicle:2.2923902747,
-  w_no_school_job:0.3282286075,
-  w_no_food_stamps:2.985317335,
-  distance_clinic:2.81,
-  w_uninsured:4.3711714556
- },
- {
-  zcta:"90701",
-  w_umemployed:3.2979160088,
-  w_no_vehicle:2.2923902747,
-  w_no_school_job:0.3282286075,
-  w_no_food_stamps:2.985317335,
-  distance_clinic:2.83,
-  w_uninsured:4.3711714556
- },
- {
-  zcta:"90703",
-  w_umemployed:8.4941856647,
-  w_no_vehicle:4.6702349226,
-  w_no_school_job:0.0,
-  w_no_food_stamps:7.4598383328,
-  distance_clinic:2.72,
-  w_uninsured:6.3471313546
- },
- {
-  zcta:"90704",
-  w_umemployed:0.0053059678,
-  w_no_vehicle:3.7725431007,
-  w_no_school_job:0.0,
-  w_no_food_stamps:0.7030407326,
-  distance_clinic:0.33,
-  w_uninsured:1.1222121882
- },
- {
-  zcta:"90706",
-  w_umemployed:18.2953271235,
-  w_no_vehicle:15.041217556,
-  w_no_school_job:7.6652358699,
-  w_no_food_stamps:21.9592134512,
-  distance_clinic:0.67,
-  w_uninsured:23.4054843701
- },
- {
-  zcta:"90706",
-  w_umemployed:18.2953271235,
-  w_no_vehicle:15.041217556,
-  w_no_school_job:7.6652358699,
-  w_no_food_stamps:21.9592134512,
-  distance_clinic:0.76,
-  w_uninsured:23.4054843701
- },
- {
-  zcta:"90710",
-  w_umemployed:6.7017802337,
-  w_no_vehicle:5.1864382697,
-  w_no_school_job:2.2639930534,
-  w_no_food_stamps:8.3524205873,
-  distance_clinic:2.36,
-  w_uninsured:9.0198926429
- },
- {
-  zcta:"90712",
-  w_umemployed:4.4114120619,
-  w_no_vehicle:4.6640479949,
-  w_no_school_job:0.2332023997,
-  w_no_food_stamps:4.8778168614,
-  distance_clinic:1.45,
-  w_uninsured:3.7409551626
- },
- {
-  zcta:"90712",
-  w_umemployed:4.4114120619,
-  w_no_vehicle:4.6640479949,
-  w_no_school_job:0.2332023997,
-  w_no_food_stamps:4.8778168614,
-  distance_clinic:1.62,
-  w_uninsured:3.7409551626
- },
- {
-  zcta:"90712",
-  w_umemployed:4.4114120619,
-  w_no_vehicle:4.6640479949,
-  w_no_school_job:0.2332023997,
-  w_no_food_stamps:4.8778168614,
-  distance_clinic:0.84,
-  w_uninsured:3.7409551626
- },
- {
-  zcta:"90713",
-  w_umemployed:5.1281054626,
-  w_no_vehicle:2.2468503315,
-  w_no_school_job:1.3569213767,
-  w_no_food_stamps:3.8328623303,
-  distance_clinic:2.07,
-  w_uninsured:2.8900663088
- },
- {
-  zcta:"90715",
-  w_umemployed:3.761731923,
-  w_no_vehicle:2.6545784654,
-  w_no_school_job:0.8870176823,
-  w_no_food_stamps:5.0242753394,
-  distance_clinic:3.86,
-  w_uninsured:5.0113261762
- },
- {
-  zcta:"90716",
-  w_umemployed:1.8747173982,
-  w_no_vehicle:4.1789643195,
-  w_no_school_job:1.0604010104,
-  w_no_food_stamps:5.4228102305,
-  distance_clinic:4.59,
-  w_uninsured:6.1834354278
- },
- {
-  zcta:"90717",
-  w_umemployed:1.9551701926,
-  w_no_vehicle:3.3026523524,
-  w_no_school_job:0.0,
-  w_no_food_stamps:7.6159163246,
-  distance_clinic:3.34,
-  w_uninsured:5.079479318
- },
- {
-  zcta:"90720",
+  zcta:90720,
+  City:"Los Alamitos",
   w_umemployed:4.5821717714,
   w_no_vehicle:2.6578048626,
   w_no_school_job:0.0,
@@ -333,7 +110,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.4006277234
  },
  {
-  zcta:"90720",
+  zcta:90720,
+  City:"Los Alamitos",
   w_umemployed:4.5821717714,
   w_no_vehicle:2.6578048626,
   w_no_school_job:0.0,
@@ -342,43 +120,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.4006277234
  },
  {
-  zcta:"90723",
-  w_umemployed:9.3179990527,
-  w_no_vehicle:7.512317335,
-  w_no_school_job:5.6896008841,
-  w_no_food_stamps:18.3804771077,
-  distance_clinic:1.27,
-  w_uninsured:24.4789115883
- },
- {
-  zcta:"90731",
-  w_umemployed:11.8860899905,
-  w_no_vehicle:22.2360132618,
-  w_no_school_job:0.0,
-  w_no_food_stamps:20.5462298705,
-  distance_clinic:3.1,
-  w_uninsured:22.5624486896
- },
- {
-  zcta:"90731",
-  w_umemployed:11.8860899905,
-  w_no_vehicle:22.2360132618,
-  w_no_school_job:0.0,
-  w_no_food_stamps:20.5462298705,
-  distance_clinic:3.64,
-  w_uninsured:22.5624486896
- },
- {
-  zcta:"90732",
-  w_umemployed:3.732858857,
-  w_no_vehicle:3.2769371645,
-  w_no_school_job:0.0,
-  w_no_food_stamps:5.2573470161,
-  distance_clinic:3.99,
-  w_uninsured:2.9706147774
- },
- {
-  zcta:"90740",
+  zcta:90740,
+  City:"Seal Beach",
   w_umemployed:2.9372604989,
   w_no_vehicle:6.687444269,
   w_no_school_job:2.1089990527,
@@ -387,7 +130,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.947948216
  },
  {
-  zcta:"90742",
+  zcta:90742,
+  City:"Huntington Beach",
   w_umemployed:0.1457265551,
   w_no_vehicle:0.0,
   w_no_school_job:0.0,
@@ -396,7 +140,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.3062595516
  },
  {
-  zcta:"90743",
+  zcta:90743,
+  City:"Seal Beach",
   w_umemployed:0.0320909378,
   w_no_vehicle:0.0943328071,
   w_no_school_job:0.0,
@@ -405,295 +150,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.0
  },
  {
-  zcta:"90744",
-  w_umemployed:12.281038838,
-  w_no_vehicle:14.8477581307,
-  w_no_school_job:3.3331701926,
-  w_no_food_stamps:21.7636406694,
-  distance_clinic:0.29,
-  w_uninsured:26.1128039154
- },
- {
-  zcta:"90744",
-  w_umemployed:12.281038838,
-  w_no_vehicle:14.8477581307,
-  w_no_school_job:3.3331701926,
-  w_no_food_stamps:21.7636406694,
-  distance_clinic:0.38,
-  w_uninsured:26.1128039154
- },
- {
-  zcta:"90745",
-  w_umemployed:10.6501954531,
-  w_no_vehicle:7.8253495422,
-  w_no_school_job:1.2281938743,
-  w_no_food_stamps:10.6151041996,
-  distance_clinic:3.27,
-  w_uninsured:12.6503969056
- },
- {
-  zcta:"90745",
-  w_umemployed:10.6501954531,
-  w_no_vehicle:7.8253495422,
-  w_no_school_job:1.2281938743,
-  w_no_food_stamps:10.6151041996,
-  distance_clinic:3.29,
-  w_uninsured:12.6503969056
- },
- {
-  zcta:"90746",
-  w_umemployed:7.2741591411,
-  w_no_vehicle:2.1241585096,
-  w_no_school_job:3.346633407,
-  w_no_food_stamps:7.0487382381,
-  distance_clinic:2.15,
-  w_uninsured:5.3060612567
- },
- {
-  zcta:"90747",
-  w_umemployed:null,
-  w_no_vehicle:null,
-  w_no_school_job:null,
-  w_no_food_stamps:null,
-  distance_clinic:2.01,
-  w_uninsured:null
- },
- {
-  zcta:"90755",
-  w_umemployed:1.2807489738,
-  w_no_vehicle:1.7149011683,
-  w_no_school_job:0.0,
-  w_no_food_stamps:2.9811784023,
-  distance_clinic:0.67,
-  w_uninsured:2.9956501421
- },
- {
-  zcta:"90802",
-  w_umemployed:9.1636454057,
-  w_no_vehicle:20.3677786549,
-  w_no_school_job:6.1090969372,
-  w_no_food_stamps:12.5149921061,
-  distance_clinic:0.77,
-  w_uninsured:12.0821613514
- },
- {
-  zcta:"90802",
-  w_umemployed:9.1636454057,
-  w_no_vehicle:20.3677786549,
-  w_no_school_job:6.1090969372,
-  w_no_food_stamps:12.5149921061,
-  distance_clinic:0.78,
-  w_uninsured:12.0821613514
- },
- {
-  zcta:"90802",
-  w_umemployed:9.1636454057,
-  w_no_vehicle:20.3677786549,
-  w_no_school_job:6.1090969372,
-  w_no_food_stamps:12.5149921061,
-  distance_clinic:0.56,
-  w_uninsured:12.0821613514
- },
- {
-  zcta:"90802",
-  w_umemployed:9.1636454057,
-  w_no_vehicle:20.3677786549,
-  w_no_school_job:6.1090969372,
-  w_no_food_stamps:12.5149921061,
-  distance_clinic:0.35,
-  w_uninsured:12.0821613514
- },
- {
-  zcta:"90803",
-  w_umemployed:4.5302320808,
-  w_no_vehicle:4.6727562362,
-  w_no_school_job:11.3306703505,
-  w_no_food_stamps:7.910090622,
-  distance_clinic:2.52,
-  w_uninsured:4.092479318
- },
- {
-  zcta:"90803",
-  w_umemployed:4.5302320808,
-  w_no_vehicle:4.6727562362,
-  w_no_school_job:11.3306703505,
-  w_no_food_stamps:7.910090622,
-  distance_clinic:2.43,
-  w_uninsured:4.092479318
- },
- {
-  zcta:"90804",
-  w_umemployed:5.9870688349,
-  w_no_vehicle:10.5285677297,
-  w_no_school_job:1.4576163562,
-  w_no_food_stamps:15.3230413641,
-  distance_clinic:0.76,
-  w_uninsured:11.3236311967
- },
- {
-  zcta:"90805",
-  w_umemployed:25.5225449953,
-  w_no_vehicle:26.6034998421,
-  w_no_school_job:11.0797871803,
-  w_no_food_stamps:32.4886984528,
-  distance_clinic:1.31,
-  w_uninsured:31.8881679823
- },
- {
-  zcta:"90806",
-  w_umemployed:9.2544363751,
-  w_no_vehicle:16.8274329018,
-  w_no_school_job:0.5865487843,
-  w_no_food_stamps:15.0417177139,
-  distance_clinic:0.28,
-  w_uninsured:14.468203347
- },
- {
-  zcta:"90807",
-  w_umemployed:3.582744869,
-  w_no_vehicle:7.0209409536,
-  w_no_school_job:0.2064982633,
-  w_no_food_stamps:6.2568973792,
-  distance_clinic:null,
-  w_uninsured:6.7834679507
- },
- {
-  zcta:"90807",
-  w_umemployed:3.582744869,
-  w_no_vehicle:7.0209409536,
-  w_no_school_job:0.2064982633,
-  w_no_food_stamps:6.2568973792,
-  distance_clinic:null,
-  w_uninsured:6.7834679507
- },
- {
-  zcta:"90807",
-  w_umemployed:3.582744869,
-  w_no_vehicle:7.0209409536,
-  w_no_school_job:0.2064982633,
-  w_no_food_stamps:6.2568973792,
-  distance_clinic:null,
-  w_uninsured:6.7834679507
- },
- {
-  zcta:"90807",
-  w_umemployed:3.582744869,
-  w_no_vehicle:7.0209409536,
-  w_no_school_job:0.2064982633,
-  w_no_food_stamps:6.2568973792,
-  distance_clinic:1.78,
-  w_uninsured:6.7834679507
- },
- {
-  zcta:"90808",
-  w_umemployed:4.4016116198,
-  w_no_vehicle:3.1136400379,
-  w_no_school_job:1.3379898958,
-  w_no_food_stamps:6.8900227344,
-  distance_clinic:2.81,
-  w_uninsured:3.2887041364
- },
- {
-  zcta:"90808",
-  w_umemployed:4.4016116198,
-  w_no_vehicle:3.1136400379,
-  w_no_school_job:1.3379898958,
-  w_no_food_stamps:6.8900227344,
-  distance_clinic:3.45,
-  w_uninsured:3.2887041364
- },
- {
-  zcta:"90810",
-  w_umemployed:9.4680852542,
-  w_no_vehicle:12.2344329018,
-  w_no_school_job:1.4468345437,
-  w_no_food_stamps:9.0513969056,
-  distance_clinic:2.77,
-  w_uninsured:11.8061698769
- },
- {
-  zcta:"90810",
-  w_umemployed:9.4680852542,
-  w_no_vehicle:12.2344329018,
-  w_no_school_job:1.4468345437,
-  w_no_food_stamps:9.0513969056,
-  distance_clinic:1.6,
-  w_uninsured:11.8061698769
- },
- {
-  zcta:"90813",
-  w_umemployed:18.7713444901,
-  w_no_vehicle:32.5811790338,
-  w_no_school_job:4.0301073571,
-  w_no_food_stamps:25.5061016735,
-  distance_clinic:0.38,
-  w_uninsured:28.4794253237
- },
- {
-  zcta:"90814",
-  w_umemployed:1.7786277234,
-  w_no_vehicle:3.0372579728,
-  w_no_school_job:0.0,
-  w_no_food_stamps:5.0877025576,
-  distance_clinic:1.45,
-  w_uninsured:2.2808980107
- },
- {
-  zcta:"90815",
-  w_umemployed:7.4007704452,
-  w_no_vehicle:5.8941850332,
-  w_no_school_job:0.0,
-  w_no_food_stamps:10.1760593622,
-  distance_clinic:2.3,
-  w_uninsured:4.4668935901
- },
- {
-  zcta:"90815",
-  w_umemployed:7.4007704452,
-  w_no_vehicle:5.8941850332,
-  w_no_school_job:0.0,
-  w_no_food_stamps:10.1760593622,
-  distance_clinic:2.2,
-  w_uninsured:4.4668935901
- },
- {
-  zcta:"90815",
-  w_umemployed:7.4007704452,
-  w_no_vehicle:5.8941850332,
-  w_no_school_job:0.0,
-  w_no_food_stamps:10.1760593622,
-  distance_clinic:1.0,
-  w_uninsured:4.4668935901
- },
- {
-  zcta:"90822",
-  w_umemployed:null,
-  w_no_vehicle:null,
-  w_no_school_job:null,
-  w_no_food_stamps:null,
-  distance_clinic:0.34,
-  w_uninsured:null
- },
- {
-  zcta:"90831",
-  w_umemployed:null,
-  w_no_vehicle:null,
-  w_no_school_job:null,
-  w_no_food_stamps:null,
-  distance_clinic:0.68,
-  w_uninsured:null
- },
- {
-  zcta:"90831",
-  w_umemployed:null,
-  w_no_vehicle:null,
-  w_no_school_job:null,
-  w_no_food_stamps:null,
-  distance_clinic:0.68,
-  w_uninsured:null
- },
- {
-  zcta:"92602",
+  zcta:92602,
+  City:"Irvine",
   w_umemployed:3.023799179,
   w_no_vehicle:0.7456880328,
   w_no_school_job:0.0,
@@ -702,7 +160,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.1207641301
  },
  {
-  zcta:"92603",
+  zcta:92603,
+  City:"Irvine",
   w_umemployed:1.8545162614,
   w_no_vehicle:2.0393305968,
   w_no_school_job:0.0,
@@ -711,7 +170,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.2055727818
  },
  {
-  zcta:"92604",
+  zcta:92604,
+  City:"Irvine",
   w_umemployed:7.0936817177,
   w_no_vehicle:4.8931196716,
   w_no_school_job:0.0,
@@ -720,7 +180,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.9628007578
  },
  {
-  zcta:"92606",
+  zcta:92606,
+  City:"Irvine",
   w_umemployed:4.2928197032,
   w_no_vehicle:2.1117903379,
   w_no_school_job:0.0,
@@ -729,7 +190,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.9819671614
  },
  {
-  zcta:"92610",
+  zcta:92610,
+  City:"Lake Forest",
   w_umemployed:2.3836084623,
   w_no_vehicle:0.9287483423,
   w_no_school_job:0.0,
@@ -738,7 +200,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.6412958636
  },
  {
-  zcta:"92612",
+  zcta:92612,
+  City:"Irvine",
   w_umemployed:5.5490407326,
   w_no_vehicle:11.604380802,
   w_no_school_job:0.0,
@@ -747,7 +210,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.0755920429
  },
  {
-  zcta:"92612",
+  zcta:92612,
+  City:"Irvine",
   w_umemployed:5.5490407326,
   w_no_vehicle:11.604380802,
   w_no_school_job:0.0,
@@ -756,7 +220,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.0755920429
  },
  {
-  zcta:"92614",
+  zcta:92614,
+  City:"Irvine",
   w_umemployed:3.1834092201,
   w_no_vehicle:3.8079472687,
   w_no_school_job:0.0,
@@ -765,7 +230,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.4374332176
  },
  {
-  zcta:"92614",
+  zcta:92614,
+  City:"Irvine",
   w_umemployed:3.1834092201,
   w_no_vehicle:3.8079472687,
   w_no_school_job:0.0,
@@ -774,7 +240,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.4374332176
  },
  {
-  zcta:"92617",
+  zcta:92617,
+  City:"Irvine",
   w_umemployed:4.7992039785,
   w_no_vehicle:9.5549270603,
   w_no_school_job:0.0,
@@ -783,7 +250,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.9567009788
  },
  {
-  zcta:"92617",
+  zcta:92617,
+  City:"Irvine",
   w_umemployed:4.7992039785,
   w_no_vehicle:9.5549270603,
   w_no_school_job:0.0,
@@ -792,7 +260,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.9567009788
  },
  {
-  zcta:"92618",
+  zcta:92618,
+  City:"Irvine",
   w_umemployed:10.3957802337,
   w_no_vehicle:6.953468898,
   w_no_school_job:0.0,
@@ -801,7 +270,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.4319330597
  },
  {
-  zcta:"92618",
+  zcta:92618,
+  City:"Irvine",
   w_umemployed:10.3957802337,
   w_no_vehicle:6.953468898,
   w_no_school_job:0.0,
@@ -810,7 +280,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.4319330597
  },
  {
-  zcta:"92618",
+  zcta:92618,
+  City:"Irvine",
   w_umemployed:10.3957802337,
   w_no_vehicle:6.953468898,
   w_no_school_job:0.0,
@@ -819,7 +290,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.4319330597
  },
  {
-  zcta:"92620",
+  zcta:92620,
+  City:"Irvine",
   w_umemployed:6.5355478371,
   w_no_vehicle:2.7485948847,
   w_no_school_job:0.0,
@@ -828,7 +300,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.2837764446
  },
  {
-  zcta:"92624",
+  zcta:92624,
+  City:"Dana Point",
   w_umemployed:0.6784692138,
   w_no_vehicle:1.2280896748,
   w_no_school_job:0.0,
@@ -837,7 +310,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.2965405747
  },
  {
-  zcta:"92625",
+  zcta:92625,
+  City:"Newport Beach",
   w_umemployed:0.6643005999,
   w_no_vehicle:2.0717874961,
   w_no_school_job:0.0,
@@ -846,7 +320,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.6269336912
  },
  {
-  zcta:"92626",
+  zcta:92626,
+  City:"Costa Mesa",
   w_umemployed:6.8571607199,
   w_no_vehicle:7.0503201768,
   w_no_school_job:1.7062418693,
@@ -855,7 +330,8 @@ export var weighted_sdoh_data = [
   w_uninsured:13.6982248184
  },
  {
-  zcta:"92626",
+  zcta:92626,
+  City:"Costa Mesa",
   w_umemployed:6.8571607199,
   w_no_vehicle:7.0503201768,
   w_no_school_job:1.7062418693,
@@ -864,7 +340,8 @@ export var weighted_sdoh_data = [
   w_uninsured:13.6982248184
  },
  {
-  zcta:"92627",
+  zcta:92627,
+  City:"Costa Mesa",
   w_umemployed:10.1728740133,
   w_no_vehicle:8.5168247553,
   w_no_school_job:4.7315693085,
@@ -873,7 +350,8 @@ export var weighted_sdoh_data = [
   w_uninsured:26.8319409536
  },
  {
-  zcta:"92629",
+  zcta:92629,
+  City:"Dana Point",
   w_umemployed:3.7031834544,
   w_no_vehicle:1.6894707925,
   w_no_school_job:0.0,
@@ -882,7 +360,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.0103599621
  },
  {
-  zcta:"92630",
+  zcta:92630,
+  City:"Lake Forest",
   w_umemployed:9.4268279129,
   w_no_vehicle:7.3341105147,
   w_no_school_job:5.6253779602,
@@ -891,7 +370,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.2875149984
  },
  {
-  zcta:"92630",
+  zcta:92630,
+  City:"Lake Forest",
   w_umemployed:9.4268279129,
   w_no_vehicle:7.3341105147,
   w_no_school_job:5.6253779602,
@@ -900,7 +380,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.2875149984
  },
  {
-  zcta:"92637",
+  zcta:92637,
+  City:"Laguna Woods",
   w_umemployed:2.3896583518,
   w_no_vehicle:6.5563719608,
   w_no_school_job:null,
@@ -909,7 +390,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.5214720556
  },
  {
-  zcta:"92646",
+  zcta:92646,
+  City:"Huntington Beach",
   w_umemployed:7.5733602779,
   w_no_vehicle:4.5904565835,
   w_no_school_job:0.6072977581,
@@ -918,7 +400,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.5738705399
  },
  {
-  zcta:"92646",
+  zcta:92646,
+  City:"Huntington Beach",
   w_umemployed:7.5733602779,
   w_no_vehicle:4.5904565835,
   w_no_school_job:0.6072977581,
@@ -927,7 +410,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.5738705399
  },
  {
-  zcta:"92647",
+  zcta:92647,
+  City:"Huntington Beach",
   w_umemployed:12.811544048,
   w_no_vehicle:4.6005089991,
   w_no_school_job:1.9023201768,
@@ -936,7 +420,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.2680239975
  },
  {
-  zcta:"92647",
+  zcta:92647,
+  City:"Huntington Beach",
   w_umemployed:12.811544048,
   w_no_vehicle:4.6005089991,
   w_no_school_job:1.9023201768,
@@ -945,7 +430,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.2680239975
  },
  {
-  zcta:"92648",
+  zcta:92648,
+  City:"Huntington Beach",
   w_umemployed:4.8233457531,
   w_no_vehicle:7.2994253237,
   w_no_school_job:0.0,
@@ -954,7 +440,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.3691064099
  },
  {
-  zcta:"92649",
+  zcta:92649,
+  City:"Huntington Beach",
   w_umemployed:4.9136419324,
   w_no_vehicle:3.2380221029,
   w_no_school_job:0.0,
@@ -963,7 +450,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.2080075781
  },
  {
-  zcta:"92651",
+  zcta:92651,
+  City:"Laguna Beach",
   w_umemployed:5.5901711399,
   w_no_vehicle:2.8550337859,
   w_no_school_job:0.0,
@@ -972,7 +460,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.7085241554
  },
  {
-  zcta:"92651",
+  zcta:92651,
+  City:"Laguna Beach",
   w_umemployed:5.5901711399,
   w_no_vehicle:2.8550337859,
   w_no_school_job:0.0,
@@ -981,7 +470,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.7085241554
  },
  {
-  zcta:"92653",
+  zcta:92653,
+  City:"Laguna Hills",
   w_umemployed:4.3405620461,
   w_no_vehicle:3.4002652352,
   w_no_school_job:2.5169561099,
@@ -990,7 +480,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.3025702558
  },
  {
-  zcta:"92653",
+  zcta:92653,
+  City:"Laguna Hills",
   w_umemployed:4.3405620461,
   w_no_vehicle:3.4002652352,
   w_no_school_job:2.5169561099,
@@ -999,7 +490,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.3025702558
  },
  {
-  zcta:"92655",
+  zcta:92655,
+  City:"Aliso Viejo",
   w_umemployed:2.6021850332,
   w_no_vehicle:5.6784970003,
   w_no_school_job:0.0,
@@ -1008,7 +500,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.3534670035
  },
  {
-  zcta:"92656",
+  zcta:92656,
+  City:"Aliso Viejo",
   w_umemployed:5.9041364067,
   w_no_vehicle:8.4953962741,
   w_no_school_job:0.0,
@@ -1017,7 +510,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.0845405747
  },
  {
-  zcta:"92656",
+  zcta:92656,
+  City:"Aliso Viejo",
   w_umemployed:5.9041364067,
   w_no_vehicle:8.4953962741,
   w_no_school_job:0.0,
@@ -1026,7 +520,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.0845405747
  },
  {
-  zcta:"92657",
+  zcta:92657,
+  City:"Newport Beach",
   w_umemployed:0.893975371,
   w_no_vehicle:0.1390628355,
   w_no_school_job:0.0,
@@ -1035,7 +530,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.3065058415
  },
  {
-  zcta:"92660",
+  zcta:92660,
+  City:"Newport Beach",
   w_umemployed:4.494606252,
   w_no_vehicle:3.2759194822,
   w_no_school_job:1.5429245343,
@@ -1044,7 +540,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.1131357752
  },
  {
-  zcta:"92660",
+  zcta:92660,
+  City:"Newport Beach",
   w_umemployed:4.494606252,
   w_no_vehicle:3.2759194822,
   w_no_school_job:1.5429245343,
@@ -1053,7 +550,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.1131357752
  },
  {
-  zcta:"92661",
+  zcta:92661,
+  City:"Newport Beach",
   w_umemployed:0.1859962109,
   w_no_vehicle:0.7596858225,
   w_no_school_job:0.0,
@@ -1062,7 +560,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.158217556
  },
  {
-  zcta:"92662",
+  zcta:92662,
+  City:"Newport Beach",
   w_umemployed:0.5793084938,
   w_no_vehicle:0.243874329,
   w_no_school_job:0.0,
@@ -1071,7 +570,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.2019450584
  },
  {
-  zcta:"92663",
+  zcta:92663,
+  City:"Newport Beach",
   w_umemployed:1.2339791601,
   w_no_vehicle:4.2758812757,
   w_no_school_job:0.0,
@@ -1080,7 +580,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.1423422798
  },
  {
-  zcta:"92663",
+  zcta:92663,
+  City:"Newport Beach",
   w_umemployed:1.2339791601,
   w_no_vehicle:4.2758812757,
   w_no_school_job:0.0,
@@ -1089,7 +590,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.1423422798
  },
  {
-  zcta:"92672",
+  zcta:92672,
+  City:"San Clemente",
   w_umemployed:4.9794269024,
   w_no_vehicle:3.534845911,
   w_no_school_job:2.4842415535,
@@ -1098,7 +600,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.6469984212
  },
  {
-  zcta:"92672",
+  zcta:92672,
+  City:"San Clemente",
   w_umemployed:4.9794269024,
   w_no_vehicle:3.534845911,
   w_no_school_job:2.4842415535,
@@ -1107,7 +610,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.6469984212
  },
  {
-  zcta:"92673",
+  zcta:92673,
+  City:"San Clemente",
   w_umemployed:4.1109725292,
   w_no_vehicle:2.5439665298,
   w_no_school_job:1.973266814,
@@ -1116,7 +620,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.7991550363
  },
  {
-  zcta:"92675",
+  zcta:92675,
+  City:"San Juan Capistrano",
   w_umemployed:4.3134389012,
   w_no_vehicle:7.6711304073,
   w_no_school_job:0.0,
@@ -1125,7 +630,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.8094622671
  },
  {
-  zcta:"92675",
+  zcta:92675,
+  City:"San Juan Capistrano",
   w_umemployed:4.3134389012,
   w_no_vehicle:7.6711304073,
   w_no_school_job:0.0,
@@ -1134,7 +640,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.8094622671
  },
  {
-  zcta:"92676",
+  zcta:92676,
+  City:"Unincorporated OC",
   w_umemployed:0.2240344174,
   w_no_vehicle:0.0423675403,
   w_no_school_job:0.0,
@@ -1143,7 +650,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.2619084307
  },
  {
-  zcta:"92677",
+  zcta:92677,
+  City:"Laguna Niguel",
   w_umemployed:11.7281452479,
   w_no_vehicle:5.8950994632,
   w_no_school_job:0.0,
@@ -1152,7 +660,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.4806694032
  },
  {
-  zcta:"92677",
+  zcta:92677,
+  City:"Laguna Niguel",
   w_umemployed:11.7281452479,
   w_no_vehicle:5.8950994632,
   w_no_school_job:0.0,
@@ -1161,7 +670,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.4806694032
  },
  {
-  zcta:"92679",
+  zcta:92679,
+  City:"Unincorporated OC",
   w_umemployed:3.8405001579,
   w_no_vehicle:0.6625121566,
   w_no_school_job:0.0,
@@ -1170,7 +680,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.4181900853
  },
  {
-  zcta:"92679",
+  zcta:92679,
+  City:"Unincorporated OC",
   w_umemployed:3.8405001579,
   w_no_vehicle:0.6625121566,
   w_no_school_job:0.0,
@@ -1179,7 +690,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.4181900853
  },
  {
-  zcta:"92683",
+  zcta:92683,
+  City:"Westminster",
   w_umemployed:19.7612683928,
   w_no_vehicle:16.7497543416,
   w_no_school_job:8.5756447742,
@@ -1188,7 +700,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.9008358068
  },
  {
-  zcta:"92683",
+  zcta:92683,
+  City:"Westminster",
   w_umemployed:19.7612683928,
   w_no_vehicle:16.7497543416,
   w_no_school_job:8.5756447742,
@@ -1197,7 +710,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.9008358068
  },
  {
-  zcta:"92683",
+  zcta:92683,
+  City:"Westminster",
   w_umemployed:19.7612683928,
   w_no_vehicle:16.7497543416,
   w_no_school_job:8.5756447742,
@@ -1206,7 +720,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.9008358068
  },
  {
-  zcta:"92688",
+  zcta:92688,
+  City:"Rancho Santa Margarita",
   w_umemployed:4.8570161036,
   w_no_vehicle:7.1377019261,
   w_no_school_job:0.0,
@@ -1215,7 +730,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.0818288601
  },
  {
-  zcta:"92691",
+  zcta:92691,
+  City:"Mission Viejo",
   w_umemployed:5.8611439848,
   w_no_vehicle:6.2718980107,
   w_no_school_job:0.0,
@@ -1224,7 +740,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.245012946
  },
  {
-  zcta:"92691",
+  zcta:92691,
+  City:"Mission Viejo",
   w_umemployed:5.8611439848,
   w_no_vehicle:6.2718980107,
   w_no_school_job:0.0,
@@ -1233,7 +750,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.245012946
  },
  {
-  zcta:"92692",
+  zcta:92692,
+  City:"Mission Viejo",
   w_umemployed:7.5818566467,
   w_no_vehicle:3.0327426587,
   w_no_school_job:0.0,
@@ -1242,7 +760,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.0595756236
  },
  {
-  zcta:"92694",
+  zcta:92694,
+  City:"Unincorporated OC",
   w_umemployed:3.6223460688,
   w_no_vehicle:0.9097985475,
   w_no_school_job:0.8676782444,
@@ -1251,7 +770,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.6005715188
  },
  {
-  zcta:"92701",
+  zcta:92701,
+  City:"Santa Ana",
   w_umemployed:9.2912699716,
   w_no_vehicle:16.7139046416,
   w_no_school_job:3.8237814967,
@@ -1260,7 +780,8 @@ export var weighted_sdoh_data = [
   w_uninsured:28.3063643827
  },
  {
-  zcta:"92701",
+  zcta:92701,
+  City:"Santa Ana",
   w_umemployed:9.2912699716,
   w_no_vehicle:16.7139046416,
   w_no_school_job:3.8237814967,
@@ -1269,7 +790,8 @@ export var weighted_sdoh_data = [
   w_uninsured:28.3063643827
  },
  {
-  zcta:"92701",
+  zcta:92701,
+  City:"Santa Ana",
   w_umemployed:9.2912699716,
   w_no_vehicle:16.7139046416,
   w_no_school_job:3.8237814967,
@@ -1278,7 +800,8 @@ export var weighted_sdoh_data = [
   w_uninsured:28.3063643827
  },
  {
-  zcta:"92703",
+  zcta:92703,
+  City:"Santa Ana",
   w_umemployed:14.2420625197,
   w_no_vehicle:8.2012466056,
   w_no_school_job:7.9285708873,
@@ -1287,7 +810,8 @@ export var weighted_sdoh_data = [
   w_uninsured:34.4200656773
  },
  {
-  zcta:"92704",
+  zcta:92704,
+  City:"Santa Ana",
   w_umemployed:11.5593021787,
   w_no_vehicle:13.160238396,
   w_no_school_job:2.604913167,
@@ -1296,7 +820,8 @@ export var weighted_sdoh_data = [
   w_uninsured:36.5230533628
  },
  {
-  zcta:"92704",
+  zcta:92704,
+  City:"Santa Ana",
   w_umemployed:11.5593021787,
   w_no_vehicle:13.160238396,
   w_no_school_job:2.604913167,
@@ -1305,7 +830,8 @@ export var weighted_sdoh_data = [
   w_uninsured:36.5230533628
  },
  {
-  zcta:"92705",
+  zcta:92705,
+  City:"Santa Ana",
   w_umemployed:4.6494385854,
   w_no_vehicle:4.1443877487,
   w_no_school_job:0.0,
@@ -1314,7 +840,8 @@ export var weighted_sdoh_data = [
   w_uninsured:11.6755869908
  },
  {
-  zcta:"92705",
+  zcta:92705,
+  City:"Santa Ana",
   w_umemployed:4.6494385854,
   w_no_vehicle:4.1443877487,
   w_no_school_job:0.0,
@@ -1323,7 +850,8 @@ export var weighted_sdoh_data = [
   w_uninsured:11.6755869908
  },
  {
-  zcta:"92705",
+  zcta:92705,
+  City:"Santa Ana",
   w_umemployed:4.6494385854,
   w_no_vehicle:4.1443877487,
   w_no_school_job:0.0,
@@ -1332,7 +860,8 @@ export var weighted_sdoh_data = [
   w_uninsured:11.6755869908
  },
  {
-  zcta:"92706",
+  zcta:92706,
+  City:"Santa Ana",
   w_umemployed:7.9344616356,
   w_no_vehicle:8.2676349858,
   w_no_school_job:2.0977581307,
@@ -1341,7 +870,8 @@ export var weighted_sdoh_data = [
   w_uninsured:14.4004925797
  },
  {
-  zcta:"92707",
+  zcta:92707,
+  City:"Santa Ana",
   w_umemployed:9.2255345753,
   w_no_vehicle:8.0376975055,
   w_no_school_job:2.3558768551,
@@ -1350,7 +880,8 @@ export var weighted_sdoh_data = [
   w_uninsured:30.032480581
  },
  {
-  zcta:"92708",
+  zcta:92708,
+  City:"Fountain Valley",
   w_umemployed:9.776443006,
   w_no_vehicle:6.4937107673,
   w_no_school_job:4.5742990212,
@@ -1359,7 +890,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.7494006947
  },
  {
-  zcta:"92708",
+  zcta:92708,
+  City:"Fountain Valley",
   w_umemployed:9.776443006,
   w_no_vehicle:6.4937107673,
   w_no_school_job:4.5742990212,
@@ -1368,7 +900,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.7494006947
  },
  {
-  zcta:"92780",
+  zcta:92780,
+  City:"Tustin",
   w_umemployed:8.4452870224,
   w_no_vehicle:10.1306403536,
   w_no_school_job:5.6857524471,
@@ -1377,7 +910,8 @@ export var weighted_sdoh_data = [
   w_uninsured:16.4460852542
  },
  {
-  zcta:"92780",
+  zcta:92780,
+  City:"Tustin",
   w_umemployed:8.4452870224,
   w_no_vehicle:10.1306403536,
   w_no_school_job:5.6857524471,
@@ -1386,7 +920,8 @@ export var weighted_sdoh_data = [
   w_uninsured:16.4460852542
  },
  {
-  zcta:"92782",
+  zcta:92782,
+  City:"Tustin",
   w_umemployed:2.252961162,
   w_no_vehicle:1.9237947584,
   w_no_school_job:0.0,
@@ -1395,7 +930,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.3699981055
  },
  {
-  zcta:"92801",
+  zcta:92801,
+  City:"Anaheim",
   w_umemployed:13.5791215662,
   w_no_vehicle:14.0151484054,
   w_no_school_job:10.547696874,
@@ -1404,7 +940,8 @@ export var weighted_sdoh_data = [
   w_uninsured:27.8226649826
  },
  {
-  zcta:"92801",
+  zcta:92801,
+  City:"Anaheim",
   w_umemployed:13.5791215662,
   w_no_vehicle:14.0151484054,
   w_no_school_job:10.547696874,
@@ -1413,7 +950,8 @@ export var weighted_sdoh_data = [
   w_uninsured:27.8226649826
  },
  {
-  zcta:"92801",
+  zcta:92801,
+  City:"Anaheim",
   w_umemployed:13.5791215662,
   w_no_vehicle:14.0151484054,
   w_no_school_job:10.547696874,
@@ -1422,7 +960,8 @@ export var weighted_sdoh_data = [
   w_uninsured:27.8226649826
  },
  {
-  zcta:"92802",
+  zcta:92802,
+  City:"Anaheim",
   w_umemployed:7.7269428481,
   w_no_vehicle:9.7837549732,
   w_no_school_job:1.1395850963,
@@ -1431,7 +970,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.1638746448
  },
  {
-  zcta:"92802",
+  zcta:92802,
+  City:"Anaheim",
   w_umemployed:7.7269428481,
   w_no_vehicle:9.7837549732,
   w_no_school_job:1.1395850963,
@@ -1440,7 +980,8 @@ export var weighted_sdoh_data = [
   w_uninsured:18.1638746448
  },
  {
-  zcta:"92804",
+  zcta:92804,
+  City:"Anaheim",
   w_umemployed:15.9251518787,
   w_no_vehicle:17.7626694032,
   w_no_school_job:1.6983116514,
@@ -1449,7 +990,8 @@ export var weighted_sdoh_data = [
   w_uninsured:29.3724392169
  },
  {
-  zcta:"92804",
+  zcta:92804,
+  City:"Anaheim",
   w_umemployed:15.9251518787,
   w_no_vehicle:17.7626694032,
   w_no_school_job:1.6983116514,
@@ -1458,7 +1000,8 @@ export var weighted_sdoh_data = [
   w_uninsured:29.3724392169
  },
  {
-  zcta:"92805",
+  zcta:92805,
+  City:"Anaheim",
   w_umemployed:10.9234126934,
   w_no_vehicle:10.3584085886,
   w_no_school_job:3.6019011683,
@@ -1467,7 +1010,8 @@ export var weighted_sdoh_data = [
   w_uninsured:31.8991900853
  },
  {
-  zcta:"92805",
+  zcta:92805,
+  City:"Anaheim",
   w_umemployed:10.9234126934,
   w_no_vehicle:10.3584085886,
   w_no_school_job:3.6019011683,
@@ -1476,7 +1020,8 @@ export var weighted_sdoh_data = [
   w_uninsured:31.8991900853
  },
  {
-  zcta:"92805",
+  zcta:92805,
+  City:"Anaheim",
   w_umemployed:10.9234126934,
   w_no_vehicle:10.3584085886,
   w_no_school_job:3.6019011683,
@@ -1485,7 +1030,8 @@ export var weighted_sdoh_data = [
   w_uninsured:31.8991900853
  },
  {
-  zcta:"92806",
+  zcta:92806,
+  City:"Anaheim",
   w_umemployed:5.3079532681,
   w_no_vehicle:4.4952522892,
   w_no_school_job:3.9238219135,
@@ -1494,7 +1040,8 @@ export var weighted_sdoh_data = [
   w_uninsured:14.4381408273
  },
  {
-  zcta:"92806",
+  zcta:92806,
+  City:"Anaheim",
   w_umemployed:5.3079532681,
   w_no_vehicle:4.4952522892,
   w_no_school_job:3.9238219135,
@@ -1503,7 +1050,8 @@ export var weighted_sdoh_data = [
   w_uninsured:14.4381408273
  },
  {
-  zcta:"92807",
+  zcta:92807,
+  City:"Anaheim",
   w_umemployed:4.9184161667,
   w_no_vehicle:2.6641420903,
   w_no_school_job:1.0132848121,
@@ -1512,7 +1060,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.7704082728
  },
  {
-  zcta:"92807",
+  zcta:92807,
+  City:"Anaheim",
   w_umemployed:4.9184161667,
   w_no_vehicle:2.6641420903,
   w_no_school_job:1.0132848121,
@@ -1521,7 +1070,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.7704082728
  },
  {
-  zcta:"92807",
+  zcta:92807,
+  City:"Anaheim",
   w_umemployed:4.9184161667,
   w_no_vehicle:2.6641420903,
   w_no_school_job:1.0132848121,
@@ -1530,7 +1080,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.7704082728
  },
  {
-  zcta:"92808",
+  zcta:92808,
+  City:"Anaheim",
   w_umemployed:3.1645153142,
   w_no_vehicle:1.3345999368,
   w_no_school_job:0.0,
@@ -1539,7 +1090,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.105090622
  },
  {
-  zcta:"92808",
+  zcta:92808,
+  City:"Anaheim",
   w_umemployed:3.1645153142,
   w_no_vehicle:1.3345999368,
   w_no_school_job:0.0,
@@ -1548,7 +1100,8 @@ export var weighted_sdoh_data = [
   w_uninsured:2.105090622
  },
  {
-  zcta:"92821",
+  zcta:92821,
+  City:"Brea",
   w_umemployed:6.8467192927,
   w_no_vehicle:5.5861319861,
   w_no_school_job:0.0,
@@ -1557,7 +1110,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.3760341017
  },
  {
-  zcta:"92821",
+  zcta:92821,
+  City:"Brea",
   w_umemployed:6.8467192927,
   w_no_vehicle:5.5861319861,
   w_no_school_job:0.0,
@@ -1566,7 +1120,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.3760341017
  },
  {
-  zcta:"92823",
+  zcta:92823,
+  City:"Brea",
   w_umemployed:0.1372440796,
   w_no_vehicle:0.0,
   w_no_school_job:0.0,
@@ -1575,7 +1130,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.5994568993
  },
  {
-  zcta:"92831",
+  zcta:92831,
+  City:"Fullerton",
   w_umemployed:9.169946953,
   w_no_vehicle:7.672112725,
   w_no_school_job:1.1090833596,
@@ -1584,7 +1140,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.9641376697
  },
  {
-  zcta:"92831",
+  zcta:92831,
+  City:"Fullerton",
   w_umemployed:9.169946953,
   w_no_vehicle:7.672112725,
   w_no_school_job:1.1090833596,
@@ -1593,7 +1150,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.9641376697
  },
  {
-  zcta:"92832",
+  zcta:92832,
+  City:"Fullerton",
   w_umemployed:5.8117009788,
   w_no_vehicle:5.313088096,
   w_no_school_job:1.8309718977,
@@ -1602,7 +1160,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.2066776129
  },
  {
-  zcta:"92832",
+  zcta:92832,
+  City:"Fullerton",
   w_umemployed:5.8117009788,
   w_no_vehicle:5.313088096,
   w_no_school_job:1.8309718977,
@@ -1611,7 +1170,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.2066776129
  },
  {
-  zcta:"92833",
+  zcta:92833,
+  City:"Fullerton",
   w_umemployed:11.3136198295,
   w_no_vehicle:6.8677985475,
   w_no_school_job:7.5147650774,
@@ -1620,7 +1180,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.4390757815
  },
  {
-  zcta:"92833",
+  zcta:92833,
+  City:"Fullerton",
   w_umemployed:11.3136198295,
   w_no_vehicle:6.8677985475,
   w_no_school_job:7.5147650774,
@@ -1629,7 +1190,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.4390757815
  },
  {
-  zcta:"92835",
+  zcta:92835,
+  City:"Fullerton",
   w_umemployed:4.1147410799,
   w_no_vehicle:2.7211714556,
   w_no_school_job:0.8658272813,
@@ -1638,7 +1200,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.6282286075
  },
  {
-  zcta:"92835",
+  zcta:92835,
+  City:"Fullerton",
   w_umemployed:4.1147410799,
   w_no_vehicle:2.7211714556,
   w_no_school_job:0.8658272813,
@@ -1647,7 +1210,8 @@ export var weighted_sdoh_data = [
   w_uninsured:3.6282286075
  },
  {
-  zcta:"92840",
+  zcta:92840,
+  City:"Garden Grove",
   w_umemployed:8.3521960846,
   w_no_vehicle:8.6437511841,
   w_no_school_job:1.1319197979,
@@ -1656,7 +1220,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.8455746763
  },
  {
-  zcta:"92840",
+  zcta:92840,
+  City:"Garden Grove",
   w_umemployed:8.3521960846,
   w_no_vehicle:8.6437511841,
   w_no_school_job:1.1319197979,
@@ -1665,7 +1230,8 @@ export var weighted_sdoh_data = [
   w_uninsured:12.8455746763
  },
  {
-  zcta:"92841",
+  zcta:92841,
+  City:"Garden Grove",
   w_umemployed:6.9976255131,
   w_no_vehicle:5.6238585412,
   w_no_school_job:0.4829649511,
@@ -1674,7 +1240,8 @@ export var weighted_sdoh_data = [
   w_uninsured:7.8347647616
  },
  {
-  zcta:"92843",
+  zcta:92843,
+  City:"Garden Grove",
   w_umemployed:6.1156662457,
   w_no_vehicle:10.5098856962,
   w_no_school_job:2.2650615725,
@@ -1683,7 +1250,8 @@ export var weighted_sdoh_data = [
   w_uninsured:14.1641850332
  },
  {
-  zcta:"92844",
+  zcta:92844,
+  City:"Garden Grove",
   w_umemployed:4.3695800442,
   w_no_vehicle:4.8566807704,
   w_no_school_job:1.5902406063,
@@ -1692,7 +1260,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.905369119
  },
  {
-  zcta:"92845",
+  zcta:92845,
+  City:"Garden Grove",
   w_umemployed:2.1667413956,
   w_no_vehicle:1.2227660246,
   w_no_school_job:0.5429081149,
@@ -1701,7 +1270,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.6336154089
  },
  {
-  zcta:"92845",
+  zcta:92845,
+  City:"Garden Grove",
   w_umemployed:2.1667413956,
   w_no_vehicle:1.2227660246,
   w_no_school_job:0.5429081149,
@@ -1710,16 +1280,8 @@ export var weighted_sdoh_data = [
   w_uninsured:1.6336154089
  },
  {
-  zcta:"92860",
-  w_umemployed:4.0910148405,
-  w_no_vehicle:2.4838304389,
-  w_no_school_job:0.4727012946,
-  w_no_food_stamps:4.9074988949,
-  distance_clinic:3.56,
-  w_uninsured:5.6638209662
- },
- {
-  zcta:"92861",
+  zcta:92861,
+  City:"Villa Park",
   w_umemployed:0.4125961478,
   w_no_vehicle:0.2546201452,
   w_no_school_job:0.0,
@@ -1728,7 +1290,8 @@ export var weighted_sdoh_data = [
   w_uninsured:0.2936495106
  },
  {
-  zcta:"92865",
+  zcta:92865,
+  City:"Orange",
   w_umemployed:2.8384224818,
   w_no_vehicle:2.3344035365,
   w_no_school_job:0.0,
@@ -1737,7 +1300,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.9009210609
  },
  {
-  zcta:"92865",
+  zcta:92865,
+  City:"Orange",
   w_umemployed:2.8384224818,
   w_no_vehicle:2.3344035365,
   w_no_school_job:0.0,
@@ -1746,7 +1310,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.9009210609
  },
  {
-  zcta:"92866",
+  zcta:92866,
+  City:"Orange",
   w_umemployed:1.2958155984,
   w_no_vehicle:4.6425273129,
   w_no_school_job:0.735594569,
@@ -1755,7 +1320,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.988402905
  },
  {
-  zcta:"92866",
+  zcta:92866,
+  City:"Orange",
   w_umemployed:1.2958155984,
   w_no_vehicle:4.6425273129,
   w_no_school_job:0.735594569,
@@ -1764,7 +1330,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.988402905
  },
  {
-  zcta:"92867",
+  zcta:92867,
+  City:"Orange",
   w_umemployed:7.0998174929,
   w_no_vehicle:1.7398762236,
   w_no_school_job:0.3367502368,
@@ -1773,7 +1340,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.7695374171
  },
  {
-  zcta:"92867",
+  zcta:92867,
+  City:"Orange",
   w_umemployed:7.0998174929,
   w_no_vehicle:1.7398762236,
   w_no_school_job:0.3367502368,
@@ -1782,7 +1350,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.7695374171
  },
  {
-  zcta:"92867",
+  zcta:92867,
+  City:"Orange",
   w_umemployed:7.0998174929,
   w_no_vehicle:1.7398762236,
   w_no_school_job:0.3367502368,
@@ -1791,7 +1360,8 @@ export var weighted_sdoh_data = [
   w_uninsured:8.7695374171
  },
  {
-  zcta:"92868",
+  zcta:92868,
+  City:"Orange",
   w_umemployed:4.7531679823,
   w_no_vehicle:3.8981007262,
   w_no_school_job:3.2861408273,
@@ -1800,7 +1370,8 @@ export var weighted_sdoh_data = [
   w_uninsured:6.1531310388
  },
  {
-  zcta:"92869",
+  zcta:92869,
+  City:"Orange",
   w_umemployed:4.3162750237,
   w_no_vehicle:3.1026804547,
   w_no_school_job:0.0,
@@ -1809,7 +1380,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.9420337859
  },
  {
-  zcta:"92869",
+  zcta:92869,
+  City:"Orange",
   w_umemployed:4.3162750237,
   w_no_vehicle:3.1026804547,
   w_no_school_job:0.0,
@@ -1818,7 +1390,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.9420337859
  },
  {
-  zcta:"92869",
+  zcta:92869,
+  City:"Orange",
   w_umemployed:4.3162750237,
   w_no_vehicle:3.1026804547,
   w_no_school_job:0.0,
@@ -1827,7 +1400,8 @@ export var weighted_sdoh_data = [
   w_uninsured:5.9420337859
  },
  {
-  zcta:"92870",
+  zcta:92870,
+  City:"Placentia",
   w_umemployed:7.1384433218,
   w_no_vehicle:5.2740498895,
   w_no_school_job:2.0323568045,
@@ -1836,7 +1410,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.809060941
  },
  {
-  zcta:"92870",
+  zcta:92870,
+  City:"Placentia",
   w_umemployed:7.1384433218,
   w_no_vehicle:5.2740498895,
   w_no_school_job:2.0323568045,
@@ -1845,7 +1420,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.809060941
  },
  {
-  zcta:"92870",
+  zcta:92870,
+  City:"Placentia",
   w_umemployed:7.1384433218,
   w_no_vehicle:5.2740498895,
   w_no_school_job:2.0323568045,
@@ -1854,70 +1430,8 @@ export var weighted_sdoh_data = [
   w_uninsured:9.809060941
  },
  {
-  zcta:"92879",
-  w_umemployed:5.8745993053,
-  w_no_vehicle:8.1088219135,
-  w_no_school_job:0.0,
-  w_no_food_stamps:15.9520369435,
-  distance_clinic:2.21,
-  w_uninsured:17.2644474266
- },
- {
-  zcta:"92880",
-  w_umemployed:10.4323871171,
-  w_no_vehicle:3.1182519735,
-  w_no_school_job:7.4975617303,
-  w_no_food_stamps:13.0920726239,
-  distance_clinic:4.89,
-  w_uninsured:11.8539431639
- },
- {
-  zcta:"92880",
-  w_umemployed:10.4323871171,
-  w_no_vehicle:3.1182519735,
-  w_no_school_job:7.4975617303,
-  w_no_food_stamps:13.0920726239,
-  distance_clinic:1.55,
-  w_uninsured:11.8539431639
- },
- {
-  zcta:"92881",
-  w_umemployed:4.1809504263,
-  w_no_vehicle:0.9291000947,
-  w_no_school_job:1.1149201137,
-  w_no_food_stamps:4.5525904642,
-  distance_clinic:3.22,
-  w_uninsured:4.9242305021
- },
- {
-  zcta:"92881",
-  w_umemployed:4.1809504263,
-  w_no_vehicle:0.9291000947,
-  w_no_school_job:1.1149201137,
-  w_no_food_stamps:4.5525904642,
-  distance_clinic:2.76,
-  w_uninsured:4.9242305021
- },
- {
-  zcta:"92882",
-  w_umemployed:11.1629194822,
-  w_no_vehicle:7.3160783075,
-  w_no_school_job:1.8880202084,
-  w_no_food_stamps:16.8741806126,
-  distance_clinic:1.15,
-  w_uninsured:24.1430584149
- },
- {
-  zcta:"92883",
-  w_umemployed:5.7680429428,
-  w_no_vehicle:3.7451821913,
-  w_no_school_job:1.098124408,
-  w_no_food_stamps:6.8777265551,
-  distance_clinic:8.8,
-  w_uninsured:4.4271752447
- },
- {
-  zcta:"92886",
+  zcta:92886,
+  City:"Yorba Linda",
   w_umemployed:6.7562690243,
   w_no_vehicle:3.710277234,
   w_no_school_job:0.0,
@@ -1926,7 +1440,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.9578377013
  },
  {
-  zcta:"92886",
+  zcta:92886,
+  City:"Yorba Linda",
   w_umemployed:6.7562690243,
   w_no_vehicle:3.710277234,
   w_no_school_job:0.0,
@@ -1935,7 +1450,8 @@ export var weighted_sdoh_data = [
   w_uninsured:4.9578377013
  },
  {
-  zcta:"92887",
+  zcta:92887,
+  City:"Yorba Linda",
   w_umemployed:1.8585563625,
   w_no_vehicle:1.0943473319,
   w_no_school_job:0.0,
