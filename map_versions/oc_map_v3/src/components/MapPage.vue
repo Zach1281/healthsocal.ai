@@ -39,6 +39,7 @@
                     default values for the min and max, which will be the min and max found in the
                     data respectively-->
               <l-reference-chart title="Mental Health Index Averages by Zip Code" :colorScale="colorScale" :min="info.min" :max="info.max" position="topright"/>
+
             </template>
           </l-choropleth-layer>
         </l-map>
@@ -108,7 +109,7 @@
   import { ocMHData } from '../data/avg_data_zipcode'
   import { weighted_mhi_data } from '../data/weighted_mhi_data'
   import { weighted_sdoh_data } from '../data/weighted_sdoh_data'
-  import { LMap, LTileLayer, LGeoJson } from 'vue2-leaflet'
+  import { LMap, LTileLayer, LGeoJson, LCircleMarker} from 'vue2-leaflet'
  
   export default {
     name: "app",
@@ -119,6 +120,7 @@
       'l-info-control': InfoControl, 
       'l-reference-chart': ReferenceChart, 
       'l-choropleth-layer': ChoroplethLayer,
+      'l-marker': LCircleMarker,
     },
     data() {
         return {
@@ -143,81 +145,87 @@
         },
         wfoodValue: {
           key: "w_no_food_stamps",
-          metric: "% eligible families with no foodstamps"
+          metric: "% eligible families with no foodstamps - <b>Food</b>"
         },
         wfoodExtraValues: [
           {
             key: "w_umemployed",
-            metric: "% Unemployed"
+            metric: "% Unemployed - <b>Econ</b>"
           },
           {
             key: "distance_clinic",
-            metric: "miles to nearest health clinic"
+            metric: "miles to nearest health clinic - <b>Community</b>"
           },
           {
             key: "w_no_school_job",
-            metric: "% of people ages 16-19 unemployed and not in school"
+            metric: "% of people ages 16-19 unemployed and not in school - <b>Education</b>"
           }
         ],
         weconValue: {
           key: "w_umemployed",
-          metric: "% of people unemployed"
+          metric: "% of people unemployed - <b>Econ</b>"
         },
         weconExtraValues: [
           {
             key: "w_no_food_stamps",
-            metric: "% eligible families with no foodstamps"
+            metric: "% eligible families with no foodstamps - <b>Food</b>"
           },
           {
             key: "distance_clinic",
-            metric: "miles to nearest health clinic"
+            metric: "miles to nearest health clinic - <b>Community</b>"
           },
           {
             key: "w_no_school_job",
-            metric: "% of people ages 16-19 unemployed and not in school"
+            metric: "% of people ages 16-19 unemployed and not in school - <b>Education</b>"
           }
         ],
         wcomValue: {
           key: "distance_clinic",
-          metric: "miles to nearest health clinic"
+          metric: "miles to nearest health clinic - <b>Community</b>"
         },
         wcomExtraValues: [
           {
             key: "w_no_food_stamps",
-            metric: "% eligible families with no foodstamps"
+            metric: "% eligible families with no foodstamps <b>Food</b>"
           },
           {
             key: "w_umemployed",
-            metric: "% of people unemployed"
+            metric: "% of people unemployed - <b>Econ</b>"
           },
           {
             key: "w_no_school_job",
-            metric: "% of people ages 16-19 unemployed and not in school"
+            metric: "% of people ages 16-19 unemployed and not in school - <b>Education</b>"
           }
         ],
         weduValue: {
           key: "w_no_school_job",
-          metric: "% of people ages 16-19 unemployed and not in school"
+          metric: "% of people ages 16-19 unemployed and not in school - <b>Education</b>"
         },
         weduExtraValues: [
           {
             key: "w_no_food_stamps",
-            metric: "% eligible families with no foodstamps"
+            metric: "% eligible families with no foodstamps - <b>Food</b>"
           },
           {
             key: "w_umemployed",
-            metric: "% of people unemployed"
+            metric: "% of people unemployed - <b>Econ</b>"
           },
           {
             key: "distance_clinic",
-            metric: "miles to nearest health clinic"
+              metric: "miles to nearest health clinic - <b>Community</b>"
           }
         ],
           /* if using OpenStreetMap, leave as true to give credit */
           mapOptions: {
             attributionControl: true
           },
-          currentStrokeColor: '3d3213'
+          currentStrokeColor: '3d3213',
+          myIcon: L.icon({
+          iconUrl: 'https://example.com/marker-icon.png',
+          iconSize: [25, 41],
+          iconAnchor: [12.5, 41],
+          popupAnchor: [0, -41]
+        })
         }
       
     },
